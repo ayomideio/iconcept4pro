@@ -1,0 +1,21 @@
+[
+    {
+    "ic4proHistoryId":  "NG;1",
+	 "ic4proCountryCode": "NG",
+    "ic4proCountryName": "Nigeria",
+    "ic4proCurrencyCode": "NGN",     
+	 "ic4proPhoneCode": 234,      
+    "ic4proLanguage":   "en",         
+      "ic4proUserLocation":  "branch",       
+      "ic4proRecordDate": "20210621",     
+      "ic4proRecordTime": "150630",         
+      "ic4proOperator":     "emma",         
+      "ic4proOperation":    "create",           
+      "ic4proWorkstation":   "xxxxxx0-1836688"  ,     
+      "ic4proRecordCounter": 1,       
+      "ic4proModifier":     "femi",            
+      "ic4proDateModified": "20210623",        
+      "ic4proTimeModified": "180701",        
+      "ic4proModifierTerminal":   "hj1341345-18666"  
+    }
+]

@@ -1,0 +1,1862 @@
+[
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "05/07/2021",             
+    "ic4proAuditDateTo": "07/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Definition of WACC A firm’s Weighted Average Cost of Capital (WACC) represents its blended cost of capital across all sources, including common shares, preferred shares, and debt.The cost of each type of capital is weighted by its percentage of total capital and they are added together. This guide will provide a detailed breakdown of what... https://corporatefinanceinstitute.com/",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "202106031123 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "202106031053"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "05/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": " princess@test.com",
+            "ic4proContactDesignate": "ic4MAN",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "femi.ademola@test.com",
+              "ic4proOthersDesignate": "ICO"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "202-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "2"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "05/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "kehinde@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "202106031123 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "202106031053"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "202-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "2"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "05/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "203-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "3"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "203-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "205-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "205-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     },
+    {
+    "ic4proFaintId": "FAINT-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proReason": "43001-en",
+    "ic4proScope": "45001-en",
+    
+       "ic4proOtherScopes":[
+           {
+             "ic4proOtherScope": "45001-en"
+           },
+           {
+             "ic4proOtherScope": "45002-en"
+           }
+        ],
+        
+            "ic4proMessage": "Memo",
+            "ic4proContactOfficer": "femi.ademola@test.com",
+            "ic4proContactDesignate": "ICO",
+    
+           "ic4proOtherReceivers":[
+              {
+              "ic4proOthersOfficer": "princess@test.com",
+              "ic4proOthersDesignate": "ic4MAN"
+              }
+           ],
+    
+          "ic4proExternalReceivers":[
+           {
+             "ic4proExtReceiver":  "femi.ademola@test.com",
+             "ic4proExtDesignate": "ICO"
+           },
+           {
+             "ic4proExtReceiver": "princess@test.com",
+             "ic4proExtDesignate": "ic4MAN"
+           }
+          ],   
+    
+    
+            "ic4proTeamLeader": "princess@test.com",
+            "ic4proLeaderLevel": "ic4MAN",
+            "ic4proTeamMembers":[
+             {
+               "ic4proMember":"femi.ademola@test.com",
+               "ic4proMemberLevel": "ICO"
+             }
+            ],
+    
+            "ic4proAttachments": [
+              {
+                "ic4proAttachedId": "femi.ademola@test.com",
+                "ic4proAttachedBy": "Mr Femi Ademola",
+                "ic4proDateTime": "20210603 "
+              },
+              {
+                "ic4proAttachedId": "kehinde@test.com",
+                "ic4proAttachedBy": "Mr Kehinde Prince",
+                "ic4proDateTime": "20210603"
+              }
+            ],
+    
+             "ic4proRecallReason": "Memo",
+             "ic4proRecallMsg": "Memo",
+             "ic4proRecaller": "", 
+             "ic4proRecallerRole": "",
+             "ic4proPreparer": "",
+             "ic4proPreparerRole": "",
+             "ic4proFaintStatus" : "",
+             "ic4proAims": "",
+             "ic4proAimsStatus": "",
+             "ic4proPublishFlag": "",
+             "ic4proPublishDate": "",
+             "ic4proPublisher": "",
+             "ic4proBuildFlag": "",
+             "ic4proBuildDate": "",
+             "ic4proBuilder": "",
+             "ic4proLanguage": "en",
+             "ic4proUserLocation": "Branch001",
+             "ic4proRecordDate": "20200603",
+             "ic4proRecordTime": "103040",
+             "ic4proOperator": "adroit",
+             "ic4proOperation": "201-en",
+             "ic4proWorkstation":"xxxxxx0-183668",
+             "ic4proRecordCounter": "1"	
+     }
+     ]

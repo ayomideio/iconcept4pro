@@ -1,0 +1,32 @@
+[
+  {
+    "ic4pro_trnrefno": "010CHDP210072014",
+  "ic4pro_branchcode":"010",
+  "ic4pro_branchname":"FACTORY ROAD ABA",
+  "ic4pro_risklevel": "HIGH",
+  "ic4pro_drcr":"D",
+  "ic4pro_txnccy":"NGN",
+  "ic4pro_acentrysrno":"15532904621",
+  "ic4pro_chequeno":"CHQ123",
+    "ic4pro_entryDate":  "20210110",
+  "ic4pro_valueDate":  "20210112",
+    "ic4pro_acctno":  "110120005",
+    "ic4pro_custacctname": "CASH TELLER ACCOUNT",
+    "ic4pro_lcyamount": 171000
+   },
+ {
+    "ic4pro_trnrefno": "010CHDP210072014",
+  "ic4pro_branchcode":"010",
+  "ic4pro_branchname":"FACTORY ROAD ABA",
+  "ic4pro_risklevel": "HIGH",
+  "ic4pro_drcr":"C",
+  "ic4pro_txnccy":"NGN",
+  "ic4pro_acentrysrno":"15532904622",
+  "ic4pro_chequeno":"CHQ123",
+    "ic4pro_entryDate":  "20210110",
+  "ic4pro_valueDate":  "20210112",
+    "ic4pro_acctno":  "0011018213",
+    "ic4pro_custacctname": "AGWU KALU I MISS",
+    "ic4pro_lcyamount": 171000
+   }
+]

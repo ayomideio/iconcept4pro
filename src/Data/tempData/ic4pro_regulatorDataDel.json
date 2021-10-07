@@ -1,0 +1,23 @@
+[
+    {
+	"ic4proRegulatorCode": "OFAC",
+     "ic4proRegulatorName":"OFAC List",
+	  "ic4proYearOfEstablish":  "Use date picker",
+	  "ic4proCountryDomicile": "United State of America",
+     "ic4proUrl":"",
+	 "ic4proMission": "Memo",
+	 "ic4proObjective": "Memo",
+     "ic4proLanguage": "en",
+        "ic4proUserLocation":"Branch001",
+        "ic4proRecordDate": 20200603,
+        "ic4proRecordTime": 103040,
+        "ic4proOperator": "adroit",
+        "ic4proOperation": "201-en",
+     "ic4proWorkstation": "11.20.10.1",
+        "ic4proRecordCounter": "1",
+        "ic4proDateDeleted": 20210624,
+        "ic4proTimeDeleted": 145001,
+        "ic4proRecordDeleter": "femi",
+        "ic4proTerminal": "macAddress-ipAddress"
+    }
+]

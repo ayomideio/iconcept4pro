@@ -1,0 +1,98 @@
+[
+    {
+       "statusID":"yes",
+       "description":"YES",
+       "value": "1",           
+       "ic4proLanguage": "en",
+       "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        },
+       {
+        "statusID":"no",
+        "description":"NO",
+        "value": "0",         
+        "ic4proLanguage" : "en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        },
+       {
+        "statusID":"true",
+        "description":"TRUE",
+        "value": "1",          
+        "ic4proLanguage": "en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        },
+       {
+        "statusID":"false",
+        "description":"FALSE",
+        "value": "0",         
+        "ic4proLanguage": "en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+       },
+       {
+        "statusID":"used",
+        "description":"USED",
+        "value": "1",                  
+        "ic4proLanguage":"en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        }, 
+        {
+        "statusID":"unused",
+        "description":"NOT IN USED",
+        "value": "0",             
+        "ic4proLanguage":"en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        },
+        {
+        "statusID":"Activate",
+        "description":"ACTIVATE",
+        "value": "1",            
+        "ic4proLanguage":"en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        },
+         {
+        "statusID":"Deactivate",
+        "description":"DEACTIVATE",
+        "value": "0",       
+        "ic4proLanguage":"en",
+        "recordDate":"20200603",
+       "recordTime":"10:30:40",
+       "operator":"adroit", 
+       "operation":"edit",
+       "workstation":"11.20.10.1",
+       "recordCounter":"1" 
+        }
+     ]

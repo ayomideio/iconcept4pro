@@ -1,0 +1,29 @@
+[
+    {
+       "ic4proHistoryId":"NGN;1",
+	 "ic4proCurrencyCode": "NGN",
+     "ic4proCurrencyName": "Naira",
+        "ic4proRank": 1,
+	 "ic4proBuyRate": 20.00 ,
+	 "ic4proSellRate": 20.00 ,
+	 "ic4proMidRate": 20.00 ,
+	 "ic4proBuyRateUsdEqv": 20.00 ,
+	 "ic4proSellRateUsdEqv": 20.00 ,
+	 "ic4proMidRateUsdEqv": 20.00 ,
+	 "ic4proRateDate": 20210120,
+	 "ic4proRateTime": "11: 00: 00",
+	 "ic4proLiborRate":   15.00,
+     "ic4proLanguage": "en",
+        "ic4proUserLocation":"Branch001",
+        "ic4proRecordDate": 20200603,
+        "ic4proRecordTime": 103040,
+        "ic4proOperator": "adroit",
+        "ic4proOperation": "201-en",
+     "ic4proWorkstation": "11.20.10.1",
+        "ic4proRecordCounter": "1",
+         "ic4proModifier": "femi",
+         "ic4proDateModified": "20210623",
+         "ic4proTimeModified": "180701",
+         "ic4proModifierTerminal": "hj1341345-18666"
+    }
+]

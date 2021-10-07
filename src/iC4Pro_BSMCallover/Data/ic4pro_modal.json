@@ -1,0 +1,18 @@
+[
+    {
+    "ic4proModalId" : "201", 
+    "ic4profunction" : "Create"
+    },
+    {
+    "ic4proModalId":"202",
+    "ic4profunction":"Modify"   
+    },
+    {
+     "ic4proModalId":"202", 
+     "ic4profunction": "Modify"   
+    },
+    {
+     "ic4proModalId":"202", 
+     "ic4profunction": "Modify"
+    }
+]

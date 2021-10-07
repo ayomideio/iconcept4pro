@@ -1,0 +1,52 @@
+[
+{
+    "ic4proUserActivityId": "201-en*20210820100120",
+    "ic4proApplication": "iC4Pro_operations",
+	"ic4proRecordId": "202-en",
+    "ic4proFunction": "create",
+    "ic4proChangeDetails": [],  
+    "ic4proLanguage":"en",
+    "ic4proCurrentCounter": "1",
+    "ic4proOperator": "Oliseh",
+    "ic4proRecordDate": "20210613",
+    "ic4proRecordTime": "150921",
+    "ic4proPreviousCounter": "0",
+    "ic4proWorkstation": "macAddress-ipAddress",
+	"ic4proPreviousStatus":"",
+	"ic4proPresentStatus": "201-en",
+    "ic4proRelatedId": "",
+    "ic4proRelatedApp":"",
+	"ic4proRelatedAppType": ""
+    },
+
+    {
+    "ic4proUserActivityId": "201-en*20210820100120",
+    "ic4proApplication": "ic4proOperations",
+	"ic4proRecordId": "202-en",
+    "ic4proFunction": "edit",
+    "ic4proChangeDetails": [
+	     {
+		    "ic4proFieldName": "ic4proReason",
+            "ic4proChangeFrom": "XX3",
+			"ic4proChangeTo":  "ABCDR"
+		  },
+		  {
+		    "ic4proFieldName": "ic4prodescription",
+            "ic4proChangeFrom": "All old values",
+			"ic4proChangeTo":  "Simple new values"
+		  }
+		] , 
+    "ic4proLanguage":"en",
+    "ic4proCurrentCounter": "2",
+    "ic4proOperator": "Oliseh",
+    "ic4proRecordDate": "20210613",
+    "ic4proRecordTime": "101901",
+    "ic4proPreviousCounter": "1",
+    "ic4proWorkstation": "macAddress-ipAddress",
+	"ic4proPreviousStatus":"create",
+	"ic4proPresentStatus": "edit",
+    "ic4proRelatedId": "202-en;1",
+    "ic4proRelatedApp":"ic4ProRestictHis",
+	"ic4proRelatedAppType":  "HISTORY"
+    }
+]

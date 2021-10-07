@@ -1,0 +1,23 @@
+[
+    {
+        "ic4proHistoryId": "en;1",
+        "ic4proLanguageId": "en",
+        "ic4proLanguageName": "English",
+        "ic4proLanguageNativeName": "English",
+        "ic4proInstalledDate": "",
+         "ic4proLanguage": "en",
+         "ic4proUserLocation":"Branch001",
+         "ic4proRecordDate":"20200603",
+         "ic4proRecordTime":"10:30:40",
+         "ic4proOperator":"adroit",
+         "ic4proOperation":"Edited",
+         "ic4proWorkstation":"11.20.10.1",
+         "ic4proRecordCounter":"2",
+         "ic4proModifier": "femi",            
+         "ic4proDateModified": "20210623",        
+         "ic4proTimeModified": "180701",        
+         "ic4proModifierTerminal": "hj1341345-18666"
+    
+    }						
+
+]

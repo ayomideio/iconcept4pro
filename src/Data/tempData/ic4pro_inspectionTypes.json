@@ -1,0 +1,30 @@
+[
+    {
+      "ic4proInspectTypeId": "42001-en",  
+       "ic4proModelId": "420001",     
+       "ic4proInspectType":"Full Inspection",
+       "ic4proNotes":  "Memo",
+       "ic4proLanguage": "en",
+       "ic4proUserLocation": "Branch001",
+       "ic4proRecordDate": "20200603",
+       "ic4proRecordTime": "103040",
+       "ic4proOperator": "adroit",
+       "ic4proOperation": "Create",
+       "ic4proWorkstation":"xxxxxx0-183668",
+       "ic4proRecordCounter": "1"		
+     },
+     {
+      "ic4proInspectTypeId": "42002-en",  
+       "ic4proModelId": "420002",     
+       "ic4proInspectType":"Full Inspection",
+       "ic4proNotes":  "Memo",
+       "ic4proLanguage": "en",
+       "ic4proUserLocation": "Branch001",
+       "ic4proRecordDate": "20200603",
+       "ic4proRecordTime": "103040",
+       "ic4proOperator": "adroit",
+       "ic4proOperation": "Create",
+       "ic4proWorkstation":"xxxxxx0-183668",
+       "ic4proRecordCounter": "1"		
+     }	  
+   ]

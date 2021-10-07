@@ -1,0 +1,54 @@
+[
+    {
+      "designate_id":"ICO",
+      "designate_name":"Internal Control officer",
+      "operating_arena":"6-en",
+      "superior_designate":"NONE",
+      "job_description":"Handles all information in the branch",
+      "recordDate":"20200603",
+      "recordTime":"103040",
+      "operator":"adroit",
+      "operation":"edit",
+      "workstation":"11.20.10.1",
+      "recordCounter":"1"
+    },
+    {
+      "designate_id":"HEADTELLER",
+      "designate_name":"Head Teller",
+      "operating_arena":"3-en",
+      "superior_designate":"COO",
+      "job_description":"Handles all information",
+      "recordDate":"20200603",
+      "recordTime":"103040",
+      "operator":"adroit",
+      "operation":"create",
+      "workstation":"11.20.10.1",
+      "recordCounter":"1"
+    },
+    {
+      "designate_id":"COO",
+      "designate_name":"Chief Operations Officer",
+      "operating_arena":"5-en",
+      "superior_designate":"CEO",
+      "job_description":"Handles all information in the branch",
+      "recordDate":"20200603",
+      "recordTime":"103040",
+      "operator":"adroit",
+      "operation":"edit",
+      "workstation":"11.20.10.1",
+      "recordCounter":"1"
+    },
+    {
+      "designate_id":"CEO",
+      "designate_name":"Chief Executive Officer",
+      "operating_arena":"1-en",
+      "superior_designate":"ICO",
+      "job_description":"Handles all information in the branch",
+      "recordDate":"20200603",
+      "recordTime":"103040",
+      "operator":"adroit",
+      "operation":"edit",
+      "workstation":"11.20.10.1",
+      "recordCounter":"1"
+    }
+  ]

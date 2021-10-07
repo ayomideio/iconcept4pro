@@ -1,0 +1,63 @@
+[
+  {
+    "ic4pro_entryNo": "010CHDP210072014",
+  "ic4pro_EntryUsedId": "AGOGBONNA",
+  "ic4pro_transType":"CASH",
+    "ic4pro_entryDate":  "20210110",
+    "ic4pro_noOfEntries":  "120",
+    "ic4pro_creditFreq": "60",
+    "ic4pro_totalCredit": 171000,
+    "ic4pro_debitFreq": "45",
+    "ic4pro_totalDebit": 171000,
+  "ic4pro_remarks": "Stamp Missing"
+   },
+ {
+    "ic4pro_entryNo": "010CHDP210072015",
+  "ic4pro_EntryUsedId": "AGOGBONNA",
+  "ic4pro_transType":"NIP",
+    "ic4pro_entryDate":  "20210110",
+    "ic4pro_noOfEntries":  "120",
+    "ic4pro_creditFreq": "60",
+    "ic4pro_totalCredit": 5000,
+    "ic4pro_debitFreq": "45",
+    "ic4pro_totalDebit": 5000,
+  "ic4pro_remarks": ""
+   },
+ {
+    "ic4pro_entryNo": "010CHDP210072017",
+  "ic4pro_EntryUsedId": "AGOGBONNA",
+  "ic4pro_transType":"CASH",
+    "ic4pro_entryDate":  "20210110",
+    "ic4pro_noOfEntries":  "120",
+    "ic4pro_creditFreq": "60",
+    "ic4pro_totalCredit": 2500,
+    "ic4pro_debitFreq": "45",
+    "ic4pro_totalDebit": 2500,
+  "ic4pro_remarks": ""
+   },
+ {
+    "ic4pro_entryNo": "010CHDP210072035",
+  "ic4pro_EntryUsedId": "AGOGBONNA",
+  "ic4pro_transType":"CHEQUE",
+    "ic4pro_entryDate":  "20210110",
+    "ic4pro_noOfEntries":  "120",
+    "ic4pro_creditFreq": "60",
+    "ic4pro_totalCredit": 7000,
+    "ic4pro_debitFreq": "45",
+    "ic4pro_totalDebit": 7000,
+  "ic4pro_remarks": "Wrong CHQ"
+   },
+ {
+    "ic4pro_entryNo": "010CHDP210070009",
+  "ic4pro_EntryUsedId": "AGOGBONNA",
+  "ic4pro_transType":"CASH",
+    "ic4pro_entryDate":  "20210110",
+    "ic4pro_noOfEntries":  "120",
+    "ic4pro_creditFreq": "60",
+    "ic4pro_totalCredit": 18610,
+    "ic4pro_debitFreq": "45",
+    "ic4pro_totalDebit": 18610,
+  "ic4pro_remarks": ""
+   }
+
+]

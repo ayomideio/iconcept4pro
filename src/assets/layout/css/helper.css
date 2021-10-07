@@ -1,0 +1,70 @@
+
+                            .font-weight-newRecord {
+                              background:#66BB6A;
+                               width:8.2rem;
+                                height:50px;
+                            }
+                            .font-weight-totalRecord {
+                              background:#42A5F5;
+                               width:8.3rem;
+                                height:50px;
+                                margin-left:0.6rem;
+                            }
+                            .font-weight-historyRecord {
+                              background:#F8A316;
+                               width:8.3rem;
+                                height:50px;
+                                margin-left:0.6rem;
+                            }
+                            .font-weight-activityRecord {
+                              background:#7E57C2;
+                               width:8.3rem;
+                                height:50px;
+                                margin-left:0.6rem;
+                            }
+                            .font-weight-deleteRecord {
+                              background:#E63A3A;
+                               width:7.8rem;
+                                height:50px;
+                                margin-left:0.6rem;
+                            }
+
+
+                            .rowstyle{
+                              margin-left: 0.3rem;
+                            }
+                            .h4style{
+                              font-Size:13px; 
+                              margin-top:0.1rem;
+                              color: white; 
+                              padding: 0;
+                            }
+                            .h4style2{
+                              font-size: 1em;
+                              color: white; 
+                              padding-right: 0.2em
+                            }
+                            .smallstyle{
+                              margin-top: 0.2rem;
+                              color: white; 
+                              padding: 0;
+                            }
+                            .smallstyles{
+                              margin-top: -1rem;
+                              color: white; 
+                              padding: 0;
+                              
+                            }
+                            .buttonstyles{
+                              margin-left: 2.5rem;
+                              background-color: white;
+                               border:none;
+                            }
+                            .labeltyles{
+                              width: 12rem;
+                              background:#C1C1C1;
+                               border:none;
+                               font-Size:18;
+                               height:50
+                            }
+                            
