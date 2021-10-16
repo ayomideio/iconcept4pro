@@ -105,7 +105,7 @@ const Table = ({ data, selectedData, selectData, filter, grouping }) => {
   
   const [subModal, setSubModal] = useState(false);
   const [currentSub, setCurrentSub] = useState({ data: [], columns: [] });
-  const [setPrinting] = useState(false);
+  const [setprinting] = useState(false);
   const [selectedOperatorOfficer, setSelectedOperatorOfficer] = useState(null);
   const [selectedRecordDate, setSelectedRecordDate] = useState(null);
   const [selectedOperation, setSelectedOperation] = useState(null);
@@ -332,7 +332,7 @@ const arrFilterRecordDateOffArray = getUniqueRecordDate(oprtData, 'ic4proRecordD
                 ref={dt} value={data}
                 className="p-datatable-customers" dataKey="ic4proFaintId" rowHover scrollable={true}
                 // scrollHeight="1000px" 
-                 header={<Header setPrinting={setPrinting} id="operationID"
+                 header={<Header setprinting={setprinting} id="operationID"
                 data={data} columnData={columnData} />}
                 responsive={true} onRowClick={(event) => { selectData(event.data); }}
                 emptyMessage="No customers found" globalFilter={filter}
@@ -484,7 +484,7 @@ const arrFilterRecordDateOffArray = getUniqueRecordDate(oprtData, 'ic4proRecordD
             })} data={currentSub.data} />
             :
             <DataTable stripedRows={true} id="modalproduct" value={currentSub.data} selectionMode="single"
-              header={<Header setPrinting={setPrinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
+              header={<Header setprinting={setprinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
               responsive={true} onRowClick={(event) => { selectData(event.data); }} globalFilter={filter}>
               {
                 currentSub.columns && currentSub.columns.map((item) =>

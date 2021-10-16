@@ -1,0 +1,30 @@
+[
+    {
+       "ic4proDeptId":  "44001-en",  
+       "ic4proModelId": "44001",     
+       "ic4proDeptName": "Full Text message",
+       "ic4proNotes":  "Memo",
+       "ic4proLanguage": "en",
+       "ic4proUserLocation": "Branch001",
+       "ic4proRecordDate": "20200603",
+       "ic4proRecordTime": "103040",
+       "ic4proOperator": "adroit",
+       "ic4proOperation": "Create",
+       "ic4proWorkstation":"xxxxxx0-183668",
+       "ic4proRecordCounter": "1"		
+     },
+     {
+      "ic4proDeptId":  "44002-en",  
+      "ic4proModelId": "44002",     
+      "ic4proDeptName": "Full Text message",
+      "ic4proNotes":  "Memo",
+      "ic4proLanguage": "en",
+      "ic4proUserLocation": "Branch001",
+      "ic4proRecordDate": "20200603",
+      "ic4proRecordTime": "103040",
+      "ic4proOperator": "adroit",
+      "ic4proOperation": "Create",
+      "ic4proWorkstation":"xxxxxx0-183668",
+      "ic4proRecordCounter": "1"		
+    }	  
+   ]

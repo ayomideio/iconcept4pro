@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useEffect,useRef} from "react";
 import {
     Dropdown,
     ButtonGroup,
@@ -16,6 +16,7 @@ import XLSX from "xlsx";
 import JsPDF from "jspdf";
 import "jspdf-autotable";
 import BTable from 'react-bootstrap/Table';
+import ReactToPrint, { useReactToPrint } from 'react-to-print';
 
 import axios from 'axios'
 
@@ -192,6 +193,11 @@ function Table({ columns, data }) {
         useExportData,
         usePagination
     );
+    const componentRef = useRef();
+
+    const handlePrint =useReactToPrint({
+        content:()=>componentRef.current
+    })
 
     return (
         <>
@@ -377,7 +383,7 @@ function Table({ columns, data }) {
                             backgroundColor: ' #48c9b0  ', height: '2rem',
                             borderRadius: '4px', border: 0, marginLeft: '15.4rem',
                         }}>
-                        Print</Dropdown.Toggle>
+                        print</Dropdown.Toggle>
                     <Dropdown.Menu
                         style={{
                             backgroundColor: ' #a3e4d7 '
@@ -388,21 +394,23 @@ function Table({ columns, data }) {
                             size="sm"
                             className="ml-1"
                             style={{ height: '2.1rem', borderRadius: '4px', padding: '2px 2px 2px 2px' }}
-                            onClick={() => {
-                                window.print()
-                            }}
+                            onClick={handlePrint}
                         >
-                            1.  Print
+                            1.  print
                       </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-
+                <ReactToPrint
+        trigger={() => <button>Print this out!</button>}
+        content={() => componentRef.current}
+      />
+      
 
             </div>
 
 
             <BTable striped bordered hover size="sm" style={{ marginTop: '0.6rem' }} >
-                <table {...getTableProps()}>
+                <table {...getTableProps()} ref={componentRef}>
                     <thead>
                         {headerGroups.map((headerGroup) => (
                             <tr {...headerGroup.getHeaderGroupProps()}>

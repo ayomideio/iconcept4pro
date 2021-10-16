@@ -1,7 +1,7 @@
 import React, {
   useState,
+  useEffect,
   useCallback,
-  useEffect
 } from 'react';
 import {
   Row,
@@ -21,41 +21,31 @@ import RecordsDeleteModal from './Modal/RecordsDeleteModal'
 import calloverData from '../Data/tempData/ic4pro_callover.json';
 import { InputText } from 'primereact/inputtext';
 import { Dialog } from 'primereact/dialog';
-import { Dropdown as Dropdowns } from 'primereact/dropdown';
 import 'primeflex/primeflex.css';
 import DistributionAnalysis from './Analysis/RTN-Distribution';
 import PatternDistribution from './Analysis/RTN-PatternDistribution';
 import PatternDistributionDetail from './Analysis/RTN-PatternDistributionDetail';
 import ExportData from './ExportModal/iC4Pro_Exports';
+import { MultiSelect } from 'primereact/multiselect';
 import axios from 'axios'
-import moment from 'moment'
-import { useHistory } from 'react-router';
 import iC4Pro_Session_Storage from '../../src/iC4Pro_Session_Storage'
+import { Dropdown as Dropdowns } from 'primereact/dropdown'
+import moment from 'moment';
+import { useHistory } from 'react-router';
 
 
 const IC4Pro_Callover = () => {
   const [state, setState] = useState({
-    data: [...[]],
+    data: [...calloverData],
     
-    rawdata:[...[]],
-    credittotal:0,
-    debittotal:0,
-    transtotal:0,
-    transdifference:0,
-    transactionInputters:'',
-    allusersdropdown:'',
+    transactionInputters:[],
     showForm: false,
     selectedData: null,
     mode: null // Mode available: create, edit, view, delete
   });
-  let history=useHistory()
-const [thereisdata,setthereisdata]=useState(false)
-  const [translimit,setTransLimit]=useState({
-    minimal:null,
-    maximal:null
-  })
+  var allcredittotalcall=0,allcredittotaldebit=0,transTotal=0
 
-  const [allusersdropdown,Setallusersdropdown]=useState('')
+  const [rawdata,setRawdata]=useState([])
   const [activityModal, setActivityModal] = useState(false);
 
   const handleActivityClose = () => setActivityModal(false);
@@ -96,8 +86,13 @@ const [thereisdata,setthereisdata]=useState(false)
 
   const handleDashboardChartClose = () => setDashboardChart(false);
 
-
-
+  const [selectedBranchCode, setSelectedBranchCode] = useState(null);
+  const [allusersdropdown,Setallusersdropdown]=useState('')
+  const [thereisdata,setthereisdata]=useState(false)
+  const [translimitmin,setTransLimitmin]=useState(0)
+  const [translimitmax,setTransLimitmax]=useState(99999999)
+  const [branchcodeSelected,setbranchcodeSelected]=useState([])
+  const [exportFiltered,setexportFiltered]=useState([])
   const [filter] = useState({
     globalFilter: ""
   })
@@ -111,15 +106,6 @@ const [thereisdata,setthereisdata]=useState(false)
       showForm: !prev.showForm
     }))
   }, []);
-
-
-
-
-
-
-
-
-
 
   const submitForm = useCallback((data, mode) => {
     if (mode === 'create') {
@@ -141,7 +127,6 @@ const [thereisdata,setthereisdata]=useState(false)
         data: newData,
         selectedData: null
       }))
-      console.log("Edit Data:", newData)
     }
 
     setState(prev => ({
@@ -149,7 +134,6 @@ const [thereisdata,setthereisdata]=useState(false)
       showForm: false
     }))
   }, [state.data]);
-
   const reverseDate=(val)=>{
     
 
@@ -159,6 +143,7 @@ const [thereisdata,setthereisdata]=useState(false)
  
     return arr2
   }
+  let history=useHistory()
   const selectData = useCallback((data) => {
     setState(prev => ({
       ...prev,
@@ -196,27 +181,59 @@ const [thereisdata,setthereisdata]=useState(false)
 
   const renderTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
-      Read Catalog Table
+      Click For Help
     </Tooltip>
   );
+
+
+  const branchCodesItemTemplate = (option) => {
+    return (
+      <div className="p-multiselect-representative-option">
+        <span className="image-text">{option.IC4PROINPUTTER}</span>
+      </div>
+    );
+  }
+
+  function getUniqueOpr(arr, comp) {
+
+    // store the comparison  values in array
+    const unique = arr.map(e => e[comp])
+
+      // store the indexes of the unique objects
+      .map((e, i, final) => final.indexOf(e) === i && i)
+
+      // eliminate the false indexes & return unique objects
+      .filter((e) => arr[e]).map(e => arr[e]);
+
+    return unique;
+  }
+  const handleTransactionInputter =(e) =>{
+    Setallusersdropdown(e.target.value)
+  
+   
+   
+  }
+
+
+  
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'NGN',
   
  
   });
-
   async function getData (){
   
 		await axios.get("http://127.0.0.1:8000/callover/index/").then(res=>{
 	
 
      
-			var allcredittotalcall=0,allcredittotaldebit=0
+		
       for (var i=0;i<res.data.alldata.length;i++){
 
         allcredittotalcall+=parseInt(res.data.alldata[i].CREDIT_TOTAL_CALL)
         allcredittotaldebit+=parseInt(res.data.alldata[i].DEBIT_TOTAL_CALL)
+        transTotal+=parseInt(res.data.alldata[i].NO_OF_ENTRIES)
        
        
       }
@@ -224,9 +241,10 @@ const [thereisdata,setthereisdata]=useState(false)
 
 
       for (var i=0;i<res.data.alldata.length;i++){
-        res.data.alldata[i].CREDIT_TOTAL_CALL=formatter.format(res.data.alldata[i].CREDIT_TOTAL_CALL).replace("NGN",'') 
-        res.data.alldata[i].DEBIT_TOTAL_CALL=formatter.format(res.data.alldata[i].DEBIT_TOTAL_CALL).replace("NGN",'')
+        // res.data.alldata[i].CREDIT_TOTAL_CALL=formatter.format(res.data.alldata[i].CREDIT_TOTAL_CALL).replace("NGN",'') 
+        // res.data.alldata[i].DEBIT_TOTAL_CALL=formatter.format(res.data.alldata[i].DEBIT_TOTAL_CALL).replace("NGN",'')
         res.data.alldata[i].GRP_BY_DATE=new Intl.DateTimeFormat('en-NG').format(new Date(res.data.alldata[i].GRP_BY_DATE))
+        res.data.rawdata[i].IC4PROVALUEDATE=new Intl.DateTimeFormat('en-NG').format(new Date(res.data.rawdata[i].IC4PROVALUEDATE))
         
         if (!JSON.stringify(res.data.transactionInputters).includes('All Users'))
           res.data.transactionInputters.push({'IC4PROBRANCHCODE': 'All Users', 'IC4PROINPUTTER': 'All Users',
@@ -234,13 +252,15 @@ const [thereisdata,setthereisdata]=useState(false)
        
         setState({
           data:res.data.alldata,
+          rawdata:res.data.rawdata,
           credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
           debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
-          transtotal:res.data.alldata.length,
+          transtotal:transTotal,
           transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
           transactionInputters:res.data.transactionInputters
        
         })
+        setRawdata(res.data.rawdata)
       }
 		
 		
@@ -252,158 +272,148 @@ const [thereisdata,setthereisdata]=useState(false)
 		
 	}
 	useEffect(()=>{
-    // const interval =setInterval(()=>
-    // {
-    //   ifiC4Pro_Session_Storage.getName()n.length<1)
-       
-    // },1000)
+    
     getData()
+    
     
 	},[]) 
 
+  async function sendTransactionLimit(){
+      if(isNaN(translimitmin)){
+        setTransLimitmin(0)
+      }
+      if(isNaN(translimitmax)){
+        setTransLimitmax(9999999999999)
+      }
+      iC4Pro_Session_Storage.setName(allusersdropdown)
+      let data =new FormData();
+      data.append("minimal",parseInt(translimitmin))
+      data.append("maximal",parseInt(translimitmax))
 
-
- const handleTransactionInputter =(e) =>{
-  Setallusersdropdown(e.target.value)
-  // var data={
-  //   'inputter':e.target.value
-  // }
-  let data =new FormData();
-  data.append("inputter",e.target.value)
-  iC4Pro_Session_Storage.setName(e.target.value)
+      data.append("inputter",allusersdropdown)
+    // data.append("csrfmiddlewaretoken",'{{csrf_token}}')
   
-
-  
-   axios.post("http://127.0.0.1:8000/callover/index/",data).then(res=>{
+   
+    await axios.post("http://127.0.0.1:8000/callover/index/",data).then(res=>{
     
-	
-    var allcredittotalcall=0,allcredittotaldebit=0
-    for (var i=0;i<res.data.alldata.length;i++){
+      if(res.data.alldata.length>0){
 
-      allcredittotalcall+=parseInt(res.data.alldata[i].CREDIT_TOTAL_CALL)
-      allcredittotaldebit+=parseInt(res.data.alldata[i].DEBIT_TOTAL_CALL)
-        if (!JSON.stringify(res.data.transactionInputters).includes('All Users'))
-          res.data.transactionInputters.push({'IC4PROBRANCHCODE': 'All Users', 'IC4PROINPUTTER': 'All Users',
-          'PROFILE_NAME': 'All Users'})
       
-      
-      setState({
+      var allcredittotalcall=0,allcredittotaldebit=0,transTotal=0
+      for (var i=0;i<res.data.alldata.length;i++){
         
-        credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
-        debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
-        transtotal:res.data.alldata.length,
-        transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
-        transactionInputters:res.data.transactionInputters
-      })
-    }
-    for (var i=0;i<res.data.alldata.length;i++){
-      res.data.alldata[i].CREDIT_TOTAL_CALL=formatter.format(res.data.alldata[i].CREDIT_TOTAL_CALL).replace("NGN",'') 
-      res.data.alldata[i].DEBIT_TOTAL_CALL=formatter.format(res.data.alldata[i].DEBIT_TOTAL_CALL).replace("NGN",'')
-      res.data.alldata[i].GRP_BY_DATE=new Intl.DateTimeFormat('en-NG').format(new Date(res.data.alldata[i].GRP_BY_DATE))
-      
-     
-      setState({
-        data:res.data.alldata,
-        credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
-        debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
-        transtotal:res.data.alldata.length,
-        transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
-        transactionInputters:res.data.transactionInputters
-     
-      })
-    }
-  
-    
-    // alert(`formatttttttttttttttt                    ${formatter.format(2500).replace("NGN",'')}`) ;
-  }).finally(()=>{
-    // setLoading(false);
-  })
- 
-}
-
-
-async function handleTransactionLimit(e){
-  setTransLimit({
-    [e.target.name]:([e.target.value])
-  })
-}
-
-async function sendTransactionLimit(){
-  let data =new FormData();
-    data.append("minimal",parseInt(translimit.minimal))
-    // data.append("minimal",translimit.maximal)
-  // data.append("csrfmiddlewaretoken",'{{csrf_token}}')
-
- 
-  await axios.post("http://127.0.0.1:8000/callover/index/",data).then(res=>{
-    alert(`allll           ${(JSON.stringify(res.data.alldata))}`)
-    var allcredittotalcall=0,allcredittotaldebit=0
-    for (var i=0;i<res.data.alldata.length;i++){
-
-      allcredittotalcall+=parseInt(res.data.alldata[i].CREDIT_TOTAL_CALL)
-      allcredittotaldebit+=parseInt(res.data.alldata[i].DEBIT_TOTAL_CALL)
-        if (!JSON.stringify(res.data.transactionInputters).includes('All Users'))
-          res.data.transactionInputters.push({'IC4PROBRANCHCODE': 'All Users', 'IC4PROINPUTTER': 'All Users',
-          'PROFILE_NAME': 'All Users'})
-      
-      
-      setState({
-    
-        credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
-        debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
-        transtotal:res.data.alldata.length,
-        transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
-        transactionInputters:res.data.transactionInputters
-      })
-    }
-    for (var i=0;i<res.data.alldata.length;i++){
-      res.data.alldata[i].CREDIT_TOTAL_CALL=formatter.format(res.data.alldata[i].CREDIT_TOTAL_CALL).replace("NGN",'') 
-      res.data.alldata[i].DEBIT_TOTAL_CALL=formatter.format(res.data.alldata[i].DEBIT_TOTAL_CALL).replace("NGN",'')
-      res.data.alldata[i].GRP_BY_DATE=moment().format('YYYYMMDD')
-      
-     if (JSON.stringify(res.data.alldata.length)!=="[]"){
-      setState({
+        allcredittotalcall+=parseInt(res.data.alldata[i].CREDIT_TOTAL_CALL)
+        allcredittotaldebit+=parseInt(res.data.alldata[i].DEBIT_TOTAL_CALL)
+        transTotal+=parseInt(res.data.alldata[i].NO_OF_ENTRIES)
+          if (!JSON.stringify(res.data.transactionInputters).includes('All Users')){
+            res.data.transactionInputters.push({'IC4PROBRANCHCODE': 'All Users', 'IC4PROINPUTTER': 'All Users',
+            'PROFILE_NAME': 'All Users'})
+          }
+        
        
-        data:res.data.alldata,
-        credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
-        debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
-        transtotal:res.data.alldata.length,
-        transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
-        transactionInputters:res.data.transactionInputters
-     
-      })
-      setthereisdata(true)
-     }
-     else{
-       setthereisdata(false)
-      setState({
+      }
+      for (var i=0;i<res.data.alldata.length;i++){
+        // res.data.alldata[i].CREDIT_TOTAL_CALL=formatter.format(res.data.alldata[i].CREDIT_TOTAL_CALL).replace("NGN",'') 
+        // res.data.alldata[i].DEBIT_TOTAL_CALL=formatter.format(res.data.alldata[i].DEBIT_TOTAL_CALL).replace("NGN",'')
+        res.data.alldata[i].GRP_BY_DATE=new Intl.DateTimeFormat('en-NG').format(new Date(res.data.alldata[i].GRP_BY_DATE))
         
-        data:[...[]],
-        credittotal:[...[]] ,
-        debittotal:[...[]] ,
-        transtotal:[...[]],
-        transdifference:[...[]] ,
-        transactionInputters:res.data.transactionInputters
-     
-      })
-     }
-
-    //  alert(`formatttttttttttttttt                    ${state.data} `)
-      
-    }
+       
+        setState({
+         
+          data:res.data.alldata,
+          credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
+          debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
+          transtotal:transTotal,
+          transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
+          transactionInputters:res.data.transactionInputters
+       
+        })
+        
+       
   
+        
+      }
+      }
+      else{
+        if (!JSON.stringify(res.data.transactionInputters).includes('All Users')){
+          res.data.transactionInputters.push({'IC4PROBRANCHCODE': 'All Users', 'IC4PROINPUTTER': 'All Users',
+          'PROFILE_NAME': 'All Users'})
+        }
+        setState({
+         
+          data:[
+            {
+              "IC4_BRANCH_CODE": "NONE",
+              "GRP_BY_DATE":  moment().format('YYYYMMDD'),
+              "NO_OF_ENTRIES":  0,
+              "CREDIT_TOTAL_CALL": 0,
+              "DEBIT_TOTAL_CALL": 0,
+              "NO_OF_CREDIT": 0,
+              "NO_OF_DEBIT": 0
+             }],
+          credittotal:formatter.format(allcredittotalcall).replace("NGN",'') ,
+          debittotal:formatter.format( allcredittotaldebit).replace("NGN",'') ,
+          transtotal:res.data.alldata.length,
+          transdifference:formatter.format(allcredittotalcall-allcredittotaldebit).replace("NGN",'') ,
+          transactionInputters:res.data.transactionInputters
+       
+        })
+        
+
+      }
+    }).finally(()=>{
+      // setLoading(false);
+    })
+    }
+
     
-    alert(`formatttttttttttttttt                    ${thereisdata}`) ;
-  }).finally(()=>{
-    // setLoading(false);
-  })
+
+
+  
+async function handleTransactionLimit(e){
+  setTransLimitmin(e.target.value)
 }
+async function handleTransactionLimitmax(e){
+ setTransLimitmax(e.target.value)
+}
+
+const selectBranchData = useCallback((data2) => {
+  
+// alert(`DATAS              ${JSON.stringify(data2)}`)
+
+setState(prev => ({
+  ...prev,
+  credittotal:data2.allcredittotalcall,
+  debittotal:data2.allcredittotaldebit,
+  transtotal:data2.transTotal,
+  transdifference:data2.transDifference ,
+}))
+alert(`refined branchess ${data2.refinedBranches}`)
+setexportFiltered(data2.refinedBranches)
+
+}, []);
+
+const selectDateData = useCallback((data2) => {
+  
+  // alert(`DATAS              ${JSON.stringify(data2)}`)
+  
+  setState(prev => ({
+    ...prev,
+    credittotal:data2.allcredittotalcall,
+    debittotal:data2.allcredittotaldebit,
+    transtotal:data2.transTotal,
+    transdifference:data2.transDifference ,
+  }))
+  alert(`refined branchess ${data2.refinedBranches}`)
+setexportFiltered(data2.refinedBranches)
+  }, []);
+
 
   return (
     <>
 
 
-      <div className="card"
+<div className="card"
         style={{
           marginBottom: '0',
           border: "none"
@@ -598,9 +608,9 @@ async function sendTransactionLimit(){
 
           </Col>
 
+          <Col sm={6} lg={3} xl={3} className="ml-3">
 
-          <Col sm={6} lg={6} xl={3} className="ml-3">
-            <Dropdowns 
+          <Dropdowns 
               options={state.transactionInputters}
               optionLabel={option=>option.IC4PROINPUTTER}
               optionValue={option=>option.IC4PROINPUTTER}
@@ -609,58 +619,45 @@ async function sendTransactionLimit(){
               value={allusersdropdown}
               // optionGroupLabel={option=>option.IC4PROINPUTTER}
               style={{ width: '10rem' }} />
+           
+
           </Col>
           <Col sm={6} lg={6} xl={3} className="ml-3">
             <Row>
-              <Col style={{ paddingRight: '-2rem', marginLeft: '-9rem' }}>
-                <InputText
-                  style={{ width: '7rem' }}
-                  type="number"
-                  name="minimal"
-                  onChange={handleTransactionLimit}
-                  value={translimit.minimal}
-                  placeholder="Min" />
-              </Col>
-             
-              <Col style={{}}>
-                <h6 style={{ marginLeft: '-2rem', marginBottom: '-2rem' }}>To</h6>
-              </Col>
-              <Col style={{ paddingRight: '0', paddingLeft: '0', marginLeft: '-7rem' }}>
+              <Col style={{ paddingRight: '-2rem', marginRight: '-3rem' }}>
                 <InputText
                   style={{ width: '7rem' }}
                   type="search"
-                  name="maximal"
+                  name="minimal"
                   onChange={handleTransactionLimit}
-                  value={translimit.maximal}
+                  value={translimitmin}
+                  placeholder="Min" />
+              </Col>
+              <Col style={{}}>
+                <h6 style={{ marginLeft: '14px', marginBottom: '-1rem' }}>To</h6>
+              </Col>
+              <Col style={{ paddingRight: '0', paddingLeft: '0', marginLeft: '-6rem' }}>
+                <InputText
+                  style={{ width: '7rem' }}
+                  type="number"
+                  name="maximal"
+                  onChange={handleTransactionLimitmax}
+                  value={translimitmax}
                   placeholder="Max" />
               </Col>
-              <Col style={{ paddingRight: '-2rem', marginRight: '-3rem' }}>
-              <Button
-                size="sm"
-                name="filter"
-                style={{
-                  backgroundColor: '#74C687',
-                  color: '#ffffff',
-                  border: 0,
-                  width: '4rem',
-                  fontSize: '0.8em',
-                  height: '1.8rem',
-                  borderRadius: '4px',
-                  marginLeft: '0.5rem',
-                  marginRight: '0.5rem',
-                  padding: '2px 2px 2px 2px'
-                }}
-                
-                onClick={sendTransactionLimit}
-              >
-                Filter
-                </Button>
-                </Col>
-              
             </Row>
           </Col>
 
-
+          <Button
+                size="sm"
+                name="filtersdsd"
+                
+                onClick={sendTransactionLimit}
+                
+              >
+              
+              Search
+                </Button>
           <Col >
             <Button
               size="sm"
@@ -688,16 +685,15 @@ async function sendTransactionLimit(){
 
         <Row>
           <Col>
-         
             <Table
-            data={state.data}
-            selectData={selectData}
-            selectedData={state.selectedData}
-            filter={filter.globalFilter}
-            grouping={grouping}
-          />
-           
-            
+              data={state.data}
+              selectData={selectData}
+              branchcodeSelected={selectBranchData}
+              entrydateSelected={selectDateData}
+              selectedData={state.selectedData}
+              filter={selectedBranchCode}
+              grouping={grouping}
+            />
           </Col>
         </Row>
 
@@ -814,7 +810,7 @@ async function sendTransactionLimit(){
         breakpoints={{ '960px': '75vw' }}
         style={{ width: '90vw' }}>
         <Table
-          data={state.rawdata}
+          data={rawdata}
           selectData={selectData}
           selectedData={state.selectedData}
           filter={filter.globalFilter}
@@ -832,7 +828,10 @@ async function sendTransactionLimit(){
         onHide={handleDistributionClose}
         breakpoints={{ '960px': '75vw' }}
         style={{ width: '90vw' }}>
-        <DistributionAnalysis />
+        <DistributionAnalysis 
+        
+        data={rawdata}
+        />
       </Dialog>
 
       <Dialog
@@ -864,19 +863,38 @@ async function sendTransactionLimit(){
       </Dialog>
 
 
-      <Dialog
-        header={<span style={{
-          padding: '10px',
-          background: 'blue',
-          color: 'white'
-        }}>Export Data</span>}
-        visible={exportData}
-        onHide={handleExportDataClose}
-        breakpoints={{ '960px': '75vw' }}
-        style={{ width: '90vw' }}>
-        <ExportData dataset={state.data} />
-
-      </Dialog>
+      {
+            exportFiltered.length>0 ? <Dialog
+            header={<span style={{
+              padding: '10px',
+              background: 'blue',
+              color: 'white'
+            }}>Export Data</span>}
+            visible={exportData}
+            onHide={handleExportDataClose}
+            breakpoints={{ '960px': '75vw' }}
+            style={{ width: '90vw' }}>
+             
+             <ExportData  dataset={exportFiltered} />
+    
+          </Dialog>
+:
+<Dialog
+            header={<span style={{
+              padding: '10px',
+              background: 'blue',
+              color: 'white'
+            }}>Export Data</span>}
+            visible={exportData}
+            onHide={handleExportDataClose}
+            breakpoints={{ '960px': '75vw' }}
+            style={{ width: '90vw' }}>
+             
+             <ExportData  dataset={state.data} />
+    
+          </Dialog>
+          }
+      
 
 
       <Dialog

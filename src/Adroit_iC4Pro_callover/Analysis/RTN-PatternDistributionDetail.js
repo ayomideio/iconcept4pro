@@ -417,14 +417,14 @@ const IndeterminateCheckbox = React.forwardRef(
     }
 )
 
-function App() {
+function App(props) {
 
 
     const columns = React.useMemo(
         () => [
             {
                 Header: 'Transaction Ref Id',
-                accessor: 'ic4proTransRefId',
+                accessor: 'IC4PROTRANSREFID',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
             },
@@ -564,8 +564,9 @@ function App() {
         const result = Object.keys(dataset).map((key) => { return dataset[key]; });
         return result;
     }
+    alert(`dataaaaaaaaaaaa ${JSON.stringify(props)}`)
 
-    const [data, setData] = React.useState(() => processData(makeData), [])
+    const [data, setData] = React.useState(() => processData(props.data), [])
     // const [originalData] = React.useState(data)
 
     // We need to keep the table from resetting the pageIndex when we

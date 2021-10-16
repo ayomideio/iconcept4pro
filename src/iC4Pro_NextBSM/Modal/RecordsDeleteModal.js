@@ -258,7 +258,7 @@ const RecordsDeleteModal = () => {
                     // onClick={handleShow}
                     // disabled={!state.selectedData}
                     >
-                      <img src={require("../../assets/layout/images/Printer.png")} alt="PRINT" />Print</Dropdown.Item>
+                      <img src={require("../../assets/layout/images/printer.png")} alt="print" />print</Dropdown.Item>
                     <Dropdown.Item
                     // onClick={handleShow2}
                     // disabled={!state.selectedData}
@@ -359,7 +359,7 @@ const RecordsDeleteModal = () => {
                   style={{ marginLeft: "2px", height: '2rem', backgroundColor: "gray", border:'none' }}
                 >
     
-                  PRINT
+                  print
               </Button>
                 </Col>
               </Row>

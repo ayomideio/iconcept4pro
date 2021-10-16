@@ -20,7 +20,7 @@ const HistoryTable = ({ data, selectedData, selectData, filter, grouping }) => {
 
 const [subModal, setSubModal] = useState(false);
 const [currentSub, setCurrentSub] = useState({ data: [], columns: [] });
-const [setPrinting] = useState(false);
+const [setprinting] = useState(false);
 
 const columnData = [
   {
@@ -139,7 +139,7 @@ const columnData = [
                 })} data={data} />
                 :
                 <DataTable stripedRows={true} value={data} selectionMode="single"
-                setPrinting={setPrinting} id="operationID"
+                setprinting={setprinting} id="operationID"
                 data={data} columnData={columnData} 
                 scrollable={true} scrollHeight="600px" paginator={true} currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
                 rows={10} rowsPerPageOptions={[5,10,20]} footer={footer}
@@ -166,7 +166,7 @@ const columnData = [
               })} data={currentSub.data} />
               :
               <DataTable stripedRows={true} id="modalproduct" value={currentSub.data} selectionMode="single"
-                header={<Header setPrinting={setPrinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
+                header={<Header setprinting={setprinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
                 responsive={true} onRowClick={(event) => { selectData(event.data); }} globalFilter={filter}>
                 {
                   currentSub.columns && currentSub.columns.map((item) =>

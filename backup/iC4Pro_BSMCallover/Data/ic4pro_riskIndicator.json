@@ -1,0 +1,34 @@
+[
+    {
+      "key":"noDocument",
+      "description":"Account Open without Document",
+      "riskType": "Operational Risk", 
+      "severity":" ",
+      "likelihood":" ",
+      "riskValue": " ",
+      "remarks":" ",
+      "recordDate":"20200603",
+      "recordTime":"10:30:40",
+      "operator":"adroit",
+      "operation":"edit",
+      "workstation":"11.20.10.1",
+      "recordCounter":"1"
+      },
+      {
+      "key":"acctOverdrawn",
+      "description":"Account Overdrawn",
+      "riskType": " ", 
+      "severity":" ",
+      "likelihood":" ",
+      "riskValue": " ",
+      "remarks":" ",
+      "recordDate":"20200603",
+      "recordTime":"10:30:40",
+      "operator":"adroit",
+      "operation":"edit",
+      "workstation":"11.20.10.1",
+      "recordCounter":"1"
+      }
+  ]
+      
+      

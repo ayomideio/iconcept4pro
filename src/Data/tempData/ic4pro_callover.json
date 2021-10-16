@@ -1,83 +1,83 @@
 [
     {
-      "ic4pro_branchCode": "110",
-      "ic4pro_entryDate":  "20210110",
-      "ic4pro_noOfEntries":  "120",
-      "ic4pro_creditFreq": "60",
-      "ic4pro_totalCredit": 200000,
-      "ic4pro_debitFreq": "45",
-      "ic4pro_totalDebit": 156000
+      "IC4_BRANCH_CODE": "110",
+      "ic4proEntryDate":  "20210110",
+      "ic4proNoOfEntries":  "120",
+      "ic4proCreditFreq": "60",
+      "ic4proTotalCredit": 200000,
+      "ic4proDebitFreq": "45",
+      "ic4proTotalDebit": 156000
      },
  {
-      "ic4pro_branchCode": "110",
-      "ic4pro_entryDate": "20210120",
-      "ic4pro_noOfEntries": "60",
-      "ic4pro_creditFreq": "30",
-      "ic4pro_totalCredit": 1200000,
-      "ic4pro_debitFreq": "30",
-      "ic4pro_totalDebit": 1200000
+      "IC4_BRANCH_CODE": "110",
+      "ic4proEntryDate": "20210120",
+      "ic4proNoOfEntries": "60",
+      "ic4proCreditFreq": "30",
+      "ic4proTotalCredit": 1200000,
+      "ic4proDebitFreq": "30",
+      "ic4proTotalDebit": 1200000
      },
      {
-      "ic4pro_branchCode": "100",
-      "ic4pro_entryDate": "20210110",
-      "ic4pro_noOfEntries": "130",
-      "ic4pro_creditFreq": "65",
-      "ic4pro_totalCredit": 700000,
-      "ic4pro_debitFreq": "47",
-      "ic4pro_totalDebit": 630000
+      "IC4_BRANCH_CODE": "100",
+      "ic4proEntryDate": "20210110",
+      "ic4proNoOfEntries": "130",
+      "ic4proCreditFreq": "65",
+      "ic4proTotalCredit": 700000,
+      "ic4proDebitFreq": "47",
+      "ic4proTotalDebit": 630000
      },
      {
-      "ic4pro_branchCode": "100",
-      "ic4pro_entryDate": "20210112",
-      "ic4pro_noOfEntries": "20",
-      "ic4pro_creditFreq": "10",
-      "ic4pro_totalCredit": 250000,
-      "ic4pro_debitFreq": "27",
-      "ic4pro_totalDebit": 500000
+      "IC4_BRANCH_CODE": "100",
+      "ic4proEntryDate": "20210112",
+      "ic4proNoOfEntries": "20",
+      "ic4proCreditFreq": "10",
+      "ic4proTotalCredit": 250000,
+      "ic4proDebitFreq": "27",
+      "ic4proTotalDebit": 500000
      },
      {
-      "ic4pro_branchCode": "180",
-      "ic4pro_entryDate": "20210110",
-      "ic4pro_noOfEntries": "200",
-      "ic4pro_creditFreq": "100",
-      "ic4pro_totalCredit": 2000000,
-      "ic4pro_debitFreq": "73",
-      "ic4pro_totalDebit": 1750000
+      "IC4_BRANCH_CODE": "180",
+      "ic4proEntryDate": "20210110",
+      "ic4proNoOfEntries": "200",
+      "ic4proCreditFreq": "100",
+      "ic4proTotalCredit": 2000000,
+      "ic4proDebitFreq": "73",
+      "ic4proTotalDebit": 1750000
      },
      {
-      "ic4pro_branchCode": "200",
-      "ic4pro_entryDate": "20210111",
-      "ic4pro_noOfEntries": "150",
-      "ic4pro_creditFreq": "75",
-      "ic4pro_totalCredit": 30000000,
-      "ic4pro_debitFreq": "79",
-      "ic4pro_totalDebit": 33000000
+      "IC4_BRANCH_CODE": "200",
+      "ic4proEntryDate": "20210111",
+      "ic4proNoOfEntries": "150",
+      "ic4proCreditFreq": "75",
+      "ic4proTotalCredit": 30000000,
+      "ic4proDebitFreq": "79",
+      "ic4proTotalDebit": 33000000
      },
      {
-      "ic4pro_branchCode": "200",
-      "ic4pro_entryDate": "20210114",
-      "ic4pro_noOfEntries": "2",
-      "ic4pro_creditFreq": "21",
-      "ic4pro_totalCredit": 200000,
-      "ic4pro_debitFreq": "68",
-      "ic4pro_totalDebit": 300000
+      "IC4_BRANCH_CODE": "200",
+      "ic4proEntryDate": "20210114",
+      "ic4proNoOfEntries": "2",
+      "ic4proCreditFreq": "21",
+      "ic4proTotalCredit": 200000,
+      "ic4proDebitFreq": "68",
+      "ic4proTotalDebit": 300000
      },
      {
-      "ic4pro_branchCode": "300",
-      "ic4pro_entryDate":  "20210110",
-      "ic4pro_noOfEntries":  "100",
-      "ic4pro_creditFreq": "50",
-      "ic4pro_totalCredit": 10200000,
-      "ic4pro_debitFreq": "22",
-      "ic4pro_totalDebit": 9300000
+      "IC4_BRANCH_CODE": "300",
+      "ic4proEntryDate":  "20210110",
+      "ic4proNoOfEntries":  "100",
+      "ic4proCreditFreq": "50",
+      "ic4proTotalCredit": 10200000,
+      "ic4proDebitFreq": "22",
+      "ic4proTotalDebit": 9300000
      },
      {
-      "ic4pro_branchCode": "080",
-      "ic4pro_entryDate":  "20210110",
-      "ic4pro_noOfEntries": "16",
-      "ic4pro_creditFreq": "8",
-      "ic4pro_totalCredit": 1200000,
-      "ic4pro_debitFreq": "87",
-      "ic4pro_totalDebit": 9600000
+      "IC4_BRANCH_CODE": "080",
+      "ic4proEntryDate":  "20210110",
+      "ic4proNoOfEntries": "16",
+      "ic4proCreditFreq": "8",
+      "ic4proTotalCredit": 1200000,
+      "ic4proDebitFreq": "87",
+      "ic4proTotalDebit": 9600000
      }
  ]

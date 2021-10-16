@@ -215,34 +215,7 @@ function Table({ columns, data, updateMyData, skipReset }) {
         useExpanded,
         usePagination,
         useRowSelect,
-        // Here we will use a plugin to add our selection column
-        hooks => {
-            hooks.visibleColumns.push(columns => {
-                return [
-                    {
-                        id: 'selection',
-                        // Make this column a groupByBoundary. This ensures that groupBy columns
-                        // are placed after it
-                        groupByBoundary: true,
-                        // The header can use the table's getToggleAllRowsSelectedProps method
-                        // to render a checkbox
-                        Header: ({ getToggleAllRowsSelectedProps }) => (
-                            <div>
-                                <IndeterminateCheckbox {...getToggleAllRowsSelectedProps()} />
-                            </div>
-                        ),
-                        // The cell can use the individual row's getToggleRowSelectedProps method
-                        // to the render a checkbox
-                        Cell: ({ row }) => (
-                            <div>
-                                <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
-                            </div>
-                        ),
-                    },
-                    ...columns,
-                ]
-            })
-        }
+       
     )
 
     // Render the UI for your table
@@ -321,65 +294,6 @@ function Table({ columns, data, updateMyData, skipReset }) {
                             This is just a very basic UI implementation:
                           */}
 
-            <div className="pagination">
-
-                <button onClick={() => previousPage()} disabled={!canPreviousPage}
-                    style={{
-                        background: !canPreviousPage ? 'lightgray' : 'gray'
-                    }}
-                >
-                    Previous
-        </button>{' '}
-                {' '}
-
-                <span style={{
-                    marginLeft: '7rem'
-                }}>
-                    Page <span style={{
-                        display: 'inline-block',
-                        width: '10px'
-                    }}></span>
-                    <strong>
-                        <input
-                            type="number"
-                            defaultValue={pageIndex + 1}
-                            onChange={e => {
-                                const page = e.target.value ? Number(e.target.value) - 1 : 0
-                                gotoPage(page)
-                            }}
-                            style={{ width: '40px', height: '5px' }}
-                        /> of {pageOptions.length}
-                    </strong>{' '}
-                </span>
-                <span style={{
-                    display: 'inline-block',
-                    width: '3rem'
-                }}></span>
-                <select
-                    value={pageSize}
-                    onChange={e => {
-                        setPageSize(Number(e.target.value))
-                    }}
-                    style={{
-                        height: '2.4rem'
-                    }}
-                >
-                    {[5, 10, 15, 20, 25, 30, 40, 50, 100].map(pageSize => (
-                        <option key={pageSize} value={pageSize}>
-                            {pageSize}  rows
-                        </option>
-                    ))}
-                </select>
-
-                <button onClick={() => nextPage()} disabled={!canNextPage}
-                    style={{
-                        background: !canNextPage ? 'lightgray' : 'gray',
-                        marginLeft: '7rem'
-                    }}>
-                    Next
-        </button>
-            </div>
-
         </>
     )
 }
@@ -416,143 +330,135 @@ const IndeterminateCheckbox = React.forwardRef(
     }
 )
 
-function App() {
+function App(props) {
 
 
     const columns = React.useMemo(
         () => [
             {
                 Header: 'Transaction Ref Id',
-                accessor: 'ic4proTransRefId',
+                accessor: 'IC4PROTRANSREFID',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Transaction Id',
-                accessor: 'ic4proTransId',
+                accessor: 'IC4PROTRANSID',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Transaction Sub Id',
-                accessor: 'ic4proTransSubId',
+                accessor: 'IC4PROTRANSSUBID',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-
-            {
+              },
+        
+              {
                 Header: 'Branch Code',
-                accessor: 'ic4pro_branchCode',
+                accessor: 'IC4PROBRANCHCODE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Account Id',
-                accessor: 'ic4proAccountId',
+                accessor: 'IC4PROACCOUNTID',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Acct Sort Code',
-                accessor: 'ic4proAcctSortCode',
+                accessor: 'IC4PROACCTSORTCODE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Account Name',
-                accessor: 'ic4proAccountName',
+                accessor: 'IC4PROACCOUNTNAME',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Lcy Amount',
-                accessor: 'ic4proLcyAmount',
+                accessor: 'IC4PROLCYAMOUNT',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Lcy Code',
-                accessor: 'ic4proLcyCode',
+                accessor: 'IC4PROLCYCODE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Fcy Amount',
-                accessor: 'ic4proFcyAmount',
+                accessor: 'IC4PROFCYAMOUNT',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Fcy Code',
-                accessor: 'ic4proFcyCode',
+                accessor: 'IC4PROFCYCODE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Transaction Code',
-                accessor: 'ic4proTransCode',
+                accessor: 'IC4PROTRANSCODE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Transaction Type',
-                accessor: 'ic4proTransType',
+                accessor: 'IC4PROTRANSTYPE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Cheque Number',
-                accessor: 'ic4proChequeNo',
+                accessor: 'IC4PROCHEQUENO',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Narrative',
-                accessor: 'ic4proNarrative',
+                accessor: 'IC4PRONARRATIVE',
+                width:230,
+                aggregate: 'count',
+                
+                Aggregated: ({ value }) => `${value} Total`,
+              },
+              {
+                Header: 'Value Date',
+                accessor: 'IC4PROVALUEDATE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
-                Header: 'Value',
-                accessor: 'ic4proValueDate',
-                aggregate: 'count',
-                Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Booking Date',
-                accessor: 'ic4proBookingDate',
+                accessor: 'IC4PROBOOKINGDATE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
-                Header: 'Posting Date',
-                accessor: 'ic4proPostingDate',
-                aggregate: 'count',
-                Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+            
+              {
                 Header: 'Entry Date',
-                accessor: 'ic4pro_entryDate',
+                accessor: 'IC4PROENTRYDATE',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            }, {
-                Header: 'Entry Time',
-                accessor: 'ic4proEntryTime',
-                aggregate: 'count',
-                Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              }, 
+              {
                 Header: 'Inputter',
-                accessor: 'ic4proInputter',
+                accessor: 'IC4PROINPUTTER',
                 aggregate: 'count',
                 Aggregated: ({ value }) => `${value} Total`,
-            },
-            {
+              },
+              {
                 Header: 'Authoriser',
-                accessor: 'ic4proAuthoriser',
+                accessor: 'IC4PROAUTHORISER',
                 aggregate: 'uniqueCount',
-                Aggregated: ({ value }) => `${value} Unique Date`,
-            }
+                Aggregated: ({ value }) => `${value} Total`,
+              }
         ],
 
         []
@@ -564,7 +470,7 @@ function App() {
         return result;
     }
 
-    const [data, setData] = React.useState(() => processData(makeData), [])
+    const [data, setData] = React.useState(() => processData(props.data), [])
     // const [originalData] = React.useState(data)
 
     // We need to keep the table from resetting the pageIndex when we

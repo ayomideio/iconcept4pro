@@ -54,7 +54,7 @@ function CopyIcon(props) {
         <svg id="Capa_1" enableBackground="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m116.59.099-63.536 63.536h63.536z" /><path d="m383.843 0h-237.253v93.635h-93.635v343.163h330.889v-436.798zm-61.787 289.838h-207.313v-30h207.313zm0-63.734h-207.313v-30h207.313zm0-63.735h-207.313v-30h207.313z" /><path d="m413.843 75.202v391.596h-285.686v45.202h330.888v-436.798z" /></g></svg>
     </div>
 }
-function PrintIcon(props) {
+function printIcon(props) {
 
     return <div className={props.className} onClick={props.onClick}>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -108,4 +108,4 @@ function EmailIcon(props) {
         </svg>
     </div>
 }
-export { PdfIcon, PrintIcon, ExcelIcon, CopyIcon, GroupingIcon, EmailIcon };
+export { PdfIcon, printIcon, ExcelIcon, CopyIcon, GroupingIcon, EmailIcon };

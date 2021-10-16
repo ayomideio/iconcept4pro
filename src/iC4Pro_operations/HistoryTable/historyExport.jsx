@@ -1,6 +1,6 @@
 import React from 'react';
 
- const Header=({ id, data, columnData, setPrinting })=> {
+ const Header=({ id, data, columnData, setprinting })=> {
 
     let textMail = "";
     columnData.forEach(item => {

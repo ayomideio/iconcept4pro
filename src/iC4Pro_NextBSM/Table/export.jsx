@@ -1,11 +1,11 @@
 import React, { Component,useRef } from 'react';
 import { ExportPdf, ExportExcel } from './download';
 import {Button} from 'primereact/button'
-import { PdfIcon, PrintIcon, ExcelIcon, CopyIcon, EmailIcon } from '../icons/icons';
-import ReactToPrint from 'react-to-print';
+import { PdfIcon, printIcon, ExcelIcon, CopyIcon, EmailIcon } from '../icons/icons';
+import ReactToprint from 'react-to-print';
 import  Table  from './index';
 
- const Header=({ id, data, columnData, setPrinting })=> {
+ const Header=({ id, data, columnData, setprinting })=> {
 
     const componentRef = useRef();
     
@@ -43,12 +43,12 @@ import  Table  from './index';
             <ExportExcel  button={<img src={require("../../assets/layout/images/Excel-2013-icon.png")} tooltip="EXCEL" tooltipOptions={{position: 'top'}} alt="EXCEL"/>  } data={data} columnData={columnData} />
             <a href={"mailto:?body=" + textMail} > <img tooltip="EMAIL" tooltipOptions={{position: 'top'}} href= "https://www.flaticon.com/authors/pixel-perfect" src={require("../../assets/layout/images/email.png")} alt="EMAIL"/></a>
             <Button type="button" style={exportIconStyle}  
-              label="" tooltip="PRINT" tooltipOptions={{position: 'top'}} onClick={() => { window.print() }} >
-             <img src={require("../../assets/layout/images/Printer.png")} alt="PRINT"/>  
+              label="" tooltip="print" tooltipOptions={{position: 'top'}} onClick={() => { window.print() }} >
+             <img src={require("../../assets/layout/images/printer.png")} alt="print"/>  
              </Button>
     
-                 <ReactToPrint
-                    trigger={() => <Button>Print this out!</Button>}
+                 <ReactToprint
+                    trigger={() => <Button>print this out!</Button>}
                     content={() => componentRef.current}
                 />
                 <Table  ref={componentRef} /> 

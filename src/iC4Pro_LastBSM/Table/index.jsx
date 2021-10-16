@@ -22,9 +22,7 @@ import classNames from 'classnames';
 import calloverData from '../Data/ic4pro_callover.json';
 import faintData from '../Data/ic4pro_faint.json';
 import oprData from '../Data/ic4pro_operations.json';
-// import { Slider } from 'primereact/slider';
-// import { Tooltip } from 'primereact/tooltip';
-// import { classNames } from 'primereact/utils';
+
 import "./DataTable.css";
 import "./ColorBadges.css";
 
@@ -42,9 +40,9 @@ const Table = ({ data, setSelectData, selectData, filter, grouping }) => {
   
   const [subModal, setSubModal] = useState(false);
   const [currentSub, setCurrentSub] = useState({ data: [], columns: [] });
-  const [printing, setPrinting] = useState(false);
+  const [printing, setprinting] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
-  const [selectDate, setSelectDate] = useState(null);
+  const [selectedData, setSelectedData] = useState(null);
   const [selectedContactOfficer, setSelectedContactOfficer] = useState(null);
   const [selectedBranchCode, setSelectedBranchCode] = useState(null);
   const [selectedEntryDate, setSelectedEntryDate] = useState(null);
@@ -248,7 +246,7 @@ const unique =  arr.map(e => e[comp])
 return unique;
 }
 
-const arrFilterBranchCodeArray = getUniqueOpr(calloverData, 'IC4PROBRANCHCODE')
+const arrFilterBranchCodeArray = getUniqueOpr(calloverData, 'ic4pro_branchCode')
 
 function getUniqueEnt(arr, comp) {
 
@@ -266,11 +264,7 @@ return unique;
 
 const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
 
-// const arrFilterOperationArray =(oprData, 'ic4proDescription')
 
-// const arrFilterOperationArray = oprData.filter(function (getRecord) {
-//   return getRecord.ic4proDescription
-// }) 
 
   const onContactOfficerChange = (e) => {
     dt.current.filter(e.value, 'ic4proContactOfficer', 'in');
@@ -281,7 +275,7 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
     return (
         <React.Fragment>
             <span className="p-column-title">Contact Officer</span>
-            {/* <img alt={rowData.representative.name} src={`showcase/demo/images/avatar/${rowData.representative.image}`} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} width={32} style={{verticalAlign: 'middle'}} /> */}
+            
             <span >{rowData.ic4proContactOfficer}</span>
         </React.Fragment>
     );
@@ -290,13 +284,13 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
   const contactOfficersItemTemplate = (option) => {
     return (
         <div className="p-multiselect-representative-option">
-            {/* //<img alt={option.name} src={`showcase/demo/images/avatar/${option.image}`} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} width={32} style={{verticalAlign: 'middle'}} /> */}
+            
             <span className="image-text">{option.ic4proContactOfficer}</span>
         </div>
     );
   }
   const onBranchCodeChange = (e) => {
-    dt.current.filter(e.value, 'IC4PROBRANCHCODE', 'in');
+    dt.current.filter(e.value, 'ic4pro_branchCode', 'in');
     setSelectedBranchCode(e.value);
   }
 
@@ -304,8 +298,8 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
     return (
         <React.Fragment>
             <span className="p-column-title">Branch Code</span>
-            {/* <img alt={rowData.representative.name} src={`showcase/demo/images/avatar/${rowData.representative.image}`} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} width={32} style={{verticalAlign: 'middle'}} /> */}
-            <span >{rowData.IC4PROBRANCHCODE}</span>
+           
+            <span >{rowData.ic4pro_branchCode}</span>
         </React.Fragment>
     );
   }
@@ -313,8 +307,8 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
   const branchCodesItemTemplate = (option) => {
     return (
         <div className="p-multiselect-representative-option">
-            {/* //<img alt={option.name} src={`showcase/demo/images/avatar/${option.image}`} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} width={32} style={{verticalAlign: 'middle'}} /> */}
-            <span className="image-text">{option.IC4PROBRANCHCODE}</span>
+            
+            <span className="image-text">{option.ic4pro_branchCode}</span>
         </div>
     );
   }
@@ -355,13 +349,13 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
           <p style={{background:rowActualRecord.map(ee=>ee.ic4proFunctionColor),fontWeight: "bold", width:'7rem'}}>{rowActualRecord.map(ee=>ee.ic4proDescription)}</p> 
           
       
-        
+       
       </React.Fragment>
     );
   };
 
    const renderOperationFilter = () => {
-    
+     
     return (
       <Dropdown
         value={selectedOperation}
@@ -418,7 +412,6 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
   const contactOfficerFilter = 
     <MultiSelect value={selectedContactOfficer} 
     options={arrFilterContactOffArray}
-    // appendTo="document.body"
     style={{minWidth:"150px",maxWidth:"160px", height: '30px'}}
     itemTemplate={contactOfficersItemTemplate} 
     onChange={onContactOfficerChange} 
@@ -429,18 +422,16 @@ const arrFilterEntryDateArray = getUniqueEnt(calloverData, 'ic4pro_entryDate')
   const branchCodeFilter = 
     <MultiSelect value={selectedBranchCode} 
     options={arrFilterBranchCodeArray}
-    
     style={{minWidth:"100px",maxWidth:"160px", height: '30px'}}
     itemTemplate={branchCodesItemTemplate} 
     onChange={onBranchCodeChange} 
-    optionLabel='IC4PROBRANCHCODE'
-    optionValue='IC4PROBRANCHCODE' 
+    optionLabel='ic4pro_branchCode'
+    optionValue='ic4pro_branchCode' 
     placeholder="All" className="p-column-filter" />;
 
   const entryDateFilter = 
     <MultiSelect value={selectedEntryDate} 
     options={arrFilterEntryDateArray}
-    
     style={{minWidth:"50px",maxWidth:"160px", height: '30px'}}
     itemTemplate={entryDatesItemTemplate} 
     onChange={onEntryDateChange} 
@@ -585,7 +576,7 @@ const noOfEntriesBodyTemplate = (rowData) => {
   );
 };
   
-  
+ 
 
   return (
     <div>
@@ -605,93 +596,111 @@ const noOfEntriesBodyTemplate = (rowData) => {
                 <DataTable 
                 ref={dt} value={data}
                 className="p-datatable-customers" dataKey="ic4proFaintId" rowHover scrollable={true}
-                
-
-                responsive={true} onRowClick={(event) => { selectData(event.data)}} 
-                onSelectionChange={(event) => { selectData(event.data)}} 
+                // scrollHeight="600px" 
+                // scrollWidth="600px"
+                responsive={true} 
+                onRowClick={(event) => { selectData(event.data)}}
+                selection={selectedData} onSelectionChange={(event) => setSelectedData(event.value)} 
+                // onSelectionChange={(event) => { selectData(event.data)}} 
                 emptyMessage="No customers found" globalFilter={filter}
                 paginator rows={10}
                 emptyMessage="No customers found"
                 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
                 paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                 rowsPerPageOptions={[10, 20, 25]}
-                  >
+                >
                 <Column selectionMode="multiple" 
                 headerStyle={{ background: '#1565C0',width: '3rem' }} 
-                style={{width: '3rem', paddingLeft:'0'}}/>
+                style={{width: '3rem', paddingLeft:'0'}}
+                />
                 <Column 
                 field="REF_ID" 
                 header="TRN_REF_NO" 
                 headerStyle={{background: '#1565C0',color:'#ffffff',width:'160px'}}
+                filter sortable={true} 
                 style={{width:'170px', padding: '3px', overflow:'visible'}}
-                />
-                <Column 
-                field="IC4PROBRANCHCODE" 
-                header="BRANCH_CODE" 
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}}
-                style={{width:'130px', padding: '3px', overflow:'visible'}}
-                />
-                <Column 
-                field="IC4PROBRANCHNAME" 
-                header="BRANCH_NAME" 
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'160px'}}
-                style={{width:'180px', padding: '3px', overflow:'visible'}}
-                />
-                <Column 
-                field="IC4PROTRANSCODE" 
-                header="DRCR" 
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}} 
-                style={{width:'130px', padding: '3px', overflow:'visible'}}
-                />
-                <Column 
-                field="IC4PROLCYCODE" 
-                header="TXN_CCY" 
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}}
-                style={{width:'130px', padding: '3px', overflow:'visible'}}
                 />
                 <Column 
                 field="AC_ENTRY_SR_NO" 
                 header="AC_ENTRY_SR_NO"
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'170px'}}  
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'170px'}}
+                filter sortable={true}   
                 style={{width:'120px', overflow:'visible'}} 
-                />
-                <Column 
-                field="IC4PROCHEQUENO" 
-                header="CHEQUE_NO"
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'120px'}} 
-                style={{width:'120px'}}
                 />
                 <Column 
                 field="ACCOUNT_NUMBER" 
                 header="ACCOUNT_NUMBER"
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'170px'}}  
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'170px'}}
+                filter sortable={true}   
                 style={{width:'120px'}}
                 />
                 <Column 
                 field="CUSTOMER_ACCOUNT_NAME" 
                 header="CUSTOMER_ACCOUNT_NAME"
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'200px'}} 
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'230px'}}
+                filter sortable={true}  
                 style={{width:'120px'}}
                 
                 />
                 <Column 
-                field="IC4PROENTRYDATE"  
-                header="ENTRY_DATE"
+                field="IC4PROLCYAMOUNT"
+                header="LCY_AMOUNT"
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'140px'}}
+                filter sortable={true} 
+                style={{width:'120px', textAlign:'right'}} 
+                 />
+                 <Column 
+                field="IC4PROLCYAMOUNT" 
+                header="TXN_CCY" 
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}}
+                filter sortable={true} 
+                style={{width:'130px', padding: '3px', overflow:'visible'}}
+                />
+                
+                <Column 
+                field="IC4PROTRANSCODE" 
+                header="DRCR" 
                 headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}} 
-                style={{width:'130px'}}/>
-
+                filter sortable={true} 
+                style={{width:'130px', padding: '3px', overflow:'visible'}}
+                />
+                <Column 
+                field="IC4PROCHEQUENO" 
+                header="CHEQUE_NO"
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'120px'}}
+                filter sortable={true}  
+                style={{width:'120px'}}
+                />
+                
                 <Column 
                 field="VALUE_DATE"  
                 header="VALUE_DATE"
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}} 
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'130px'}}
+                filter sortable={true}  
                 style={{width:'130px'}}/>
 
                 <Column 
-                field="IC4PROLCYAMOUNT"
-                header="LCY_AMOUNT"
-                headerStyle={{background: '#1565C0',color:'#ffffff',width:'120px'}}
-                style={{width:'120px', textAlign:'right'}} 
-                 />
+                field="IC4PRODOMICILEBRANCH"  
+                header="Domicile Branch"
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'150px'}}
+                filter sortable={true}  
+                style={{width:'130px'}}/>
+                <Column 
+                field="TRANSACTION_NARRATIVE"  
+                header="Narrative"
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'150px'}}
+                filter sortable={true}  
+                style={{width:'130px'}}/>
+
+                <Column 
+                field="IC4PROFRAUDREMARK"  
+                header="Remarks"
+                headerStyle={{background: '#1565C0',color:'#ffffff',width:'150px'}}
+                filter sortable={true}  
+                style={{width:'130px'}}/>
+
+                
+                
                 
                
            </DataTable>
@@ -711,7 +720,7 @@ const noOfEntriesBodyTemplate = (rowData) => {
                   }, }
             })} data={currentSub.data} />
             :
-            <DataTable id="modalproduct" value={currentSub.data} selectionMode="single" header={<Header setPrinting={setPrinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
+            <DataTable id="modalproduct" value={currentSub.data} selectionMode="single" header={<Header setprinting={setprinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
               responsive={true} onRowClick={(event) => { selectData(event.data); }} globalFilter={filter}>
               {
                 currentSub.columns && currentSub.columns.map((item) =>

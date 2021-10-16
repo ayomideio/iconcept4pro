@@ -42,7 +42,7 @@ const Table = ({ data, selectedData, selectData, filter, grouping }) => {
   
   const [subModal, setSubModal] = useState(false);
   const [currentSub, setCurrentSub] = useState({ data: [], columns: [] });
-  const [printing, setPrinting] = useState(false);
+  const [printing, setprinting] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedContactOfficer, setSelectedContactOfficer] = useState(null);
   const [selectedBranchCode, setSelectedBranchCode] = useState(null);
@@ -740,7 +740,7 @@ const noOfEntriesBodyTemplate = (rowData) => {
                   }, }
             })} data={currentSub.data} />
             :
-            <DataTable id="modalproduct" value={currentSub.data} selectionMode="single" header={<Header setPrinting={setPrinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
+            <DataTable id="modalproduct" value={currentSub.data} selectionMode="single" header={<Header setprinting={setprinting} id="modalproduct" data={currentSub.data} columnData={currentSub.columns} />} paginator={true} rows={5}
               responsive={true} onRowClick={(event) => { selectData(event.data); }} globalFilter={filter}>
               {
                 currentSub.columns && currentSub.columns.map((item) =>

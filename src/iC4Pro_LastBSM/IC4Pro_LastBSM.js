@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback,useRef } from 'react';
 import {
   Container,
   Row,
@@ -22,16 +22,13 @@ import Table from './Table';
 import HistoryModal from './Modal/HistoryModal'
 import ActivityModal from './Modal/ActivityModal'
 import RecordsDeleteModal from './Modal/RecordsDeleteModal'
-// import { Tooltip } from 'primereact/tooltip';
+
 import calloverData from './Data/ic4pro_callover.json';
 import { InputText } from 'primereact/inputtext';
 import { Dropdown as Dropdowns } from 'primereact/dropdown';
-// import AnalysisTable from './AnalyticTable/AnalysisTable';
+
 import {Chart, Legend} from 'chart.js';
-// import { Chart } from 'primereact/chart';
-// import { Doughnut } from "react-chartjs-2";
-// import { Parser as HtmlToReactParser } from "html-to-react";
-// import styled from "styled-components";
+
 import 'primeflex/primeflex.css';
 import ReactDOM from "react-dom";
 import ChartDataLabels from 'chartjs-plugin-datalabels';
@@ -39,6 +36,8 @@ import { Splitter, SplitterPanel } from 'primereact/splitter';
 import iC4Pro_Session_Storage from '../../src/iC4Pro_Session_Storage'
 import axios from 'axios'
 import { useHistory } from 'react-router';
+import { Toast } from 'primereact/toast';
+import SweetAlert from 'react-bootstrap-sweetalert'
 
 const IC4Pro_LastBSM = () => {
   const [state, setState] = useState({
@@ -67,6 +66,9 @@ const IC4Pro_LastBSM = () => {
   const [totalCredit, settotalCredit] = useState(0.00);
   const [totalDebit, settotalDebit] = useState(0.00);
   const [transDifference, settransDifference] = useState(0.00);
+  const [calloverQuestion, setcalloverQuestion] = useState(false);
+  const [calloverSuccess, setcalloverSuccess] = useState(false);
+  
   const [filter, setFilter] = useState({
     globalFilter: ""
   })
@@ -269,14 +271,42 @@ const IC4Pro_LastBSM = () => {
     // },1000)
     getData()
 	},[]) 
-  
+ const handleConfirmed =()=>{
+   setcalloverQuestion(false)
+   setcalloverSuccess(true)
+ }
+  const acceptCallover =()=>{
 
+  }
         return (
                 <>
 
-          
-
           <div className="card" style={{marginBottom:'0', border: "none"}}>
+    
+          <SweetAlert
+  warning
+  showCancel
+  confirmBtnText="Yes"
+  confirmBtnBsStyle="danger"
+  title="Are you sure ?"
+  onConfirm={handleConfirmed}
+  onCancel={()=>setcalloverQuestion(false)}
+  focusCancelBtn
+  show={calloverQuestion}
+>
+You want to callover this transaction,you will not be able to reverse this action
+</SweetAlert>
+
+<SweetAlert success title="Transaction Called Over"
+show={calloverSuccess}
+showCancel
+confirmBtnText="Next"
+confirmBtnBsStyle="danger"
+
+// onConfirm={this.onConfirm} onCancel={this.onCancel}
+>
+  Click Next to go to next transaction and cancel button to go back to previous page
+</SweetAlert>
            <Row>
                <Col xs={4} >
                       <div style={{marginLeft:'0.5rem', background:"#C1C1C1", display: "inline-block", padding: "6px", paddingLeft:'2px', borderRadius:"3px"}}>
@@ -295,49 +325,92 @@ const IC4Pro_LastBSM = () => {
                </Col>
             <Col xs={8} >
              <Row > 
-            <div style={{ width:"6.2rem"}}></div>
+            <div style={{ width:"21rem"}}></div>
                      
-            <Col style={{padding: '0'}}>
-            <button  type="submit" style={{fontSize:"14px", float:'right', width:'7.5rem', background:"#B97A57", color: "white", border:'none', borderRadius: '2px'}}>
-           
-            Anomalies
-            <br/>
-            <small style={{fontSize:"12px",marginLeft:'8px', marginTop: '0.006em', color: "white", padding:"0"}}>0</small>
-            </button>
-            </Col>
-            
-            <Col style={{padding: '0'}}>
-            <button type="submit" style={{fontSize:"14px", float:'right', width:'7.5rem', background:"#42A5F5", color: "white", border:'none', borderRadius: '2px'}}>
-           
-            Total credit
-            <br/>
-            <small style={{fontSize:"12px",marginLeft:'8px', marginTop: '0.006em', color: "white", padding:"0"}}>{totalCredit}</small>
-            </button>
-            </Col>
-
-            <Col style={{padding: '0'}}>
-            <button type="submit" style={{fontSize:"14px", float:'right', width:'7.5rem', background:"#F8A316", color: "white", border:'none', borderRadius: '2px'}}
-            >
-            
-            Total debit
-            <br/>
-            <small style={{fontSize:"12px",marginLeft:'8px', marginTop: '0.006em', color: "white", padding:"0"}}>{totalDebit}</small>
-            </button>
-            </Col>
-
             
 
-            <Col style={{paddingTop: '0', paddingBottom: '0', paddingLeft:'0', paddingRight:'10px'}}>
-            <button type="submit" style={{fontSize:"14px", float:'right', width:'7.5rem', background:"#E63A3A", color: "white", border:'none', borderRadius: '2px'}}
-             >
-            
-            Difference
-            <br/>
-            <small style={{fontSize:"12px",marginLeft:'8px', marginTop: '0.006em', color: "white", padding:"0"}}>{transDifference}</small>
-            </button>
-            </Col>
+<Col sm={6} lg={6} xl={7}>
+    
+    <ButtonGroup size="sm" >
+    
+      
+    <Button
+      size="sm"
+      className="ml-2"
+      name="edit"
+      style={{ backgroundColor:'#237163', width:'4rem', border: 0,  fontSize: '0.8em', height:'1.8rem', marginRight:'0.5rem', padding:'2px 2px 2px 2px'}}
+      
+      onClick={()=>setcalloverQuestion(true)}
+      >
+        Accept
+    </Button>
 
-            
+    <Button
+        size="sm"
+        className="ml-1"
+        name="view"
+        style={{backgroundColor:'#E0918E', width:'4.5rem', border: 0,  fontSize: '0.8em', height:'1.8rem', marginRight:'0.5rem',padding:'2px 2px 2px 2px'}} 
+      >
+        Exception
+    </Button>
+
+    <Button
+        size="sm"
+        className="ml-1"
+        name="delete"
+        style={{backgroundColor:'#ffffff', color:"black", width:'3.6rem', fontSize: '0.8em', height:'1.8rem', marginRight:'0.5rem', borderRadius:'4px', padding:'2px 2px 2px 2px'}}
+        
+      >
+      Findings
+    </Button>
+
+    
+
+      <Dropdown as={ButtonGroup} 
+      className="ml-1"
+      style={{padding:"0", marginLeft:"0.1rem", border: 0, width:"18px"}} 
+      >
+        <Dropdown.Toggle 
+        variant="primary btn-md"
+        id="dropdown-basic"
+        style={{backgroundColor: 'purple', width:'3.6rem', fontSize: '0.7em', height:'1.8rem', borderRadius:'4px', border: 0,}}>
+          More</Dropdown.Toggle>
+        <Dropdown.Menu>
+        <Dropdown.Item>
+          <img src={require("../assets/layout/images/printer.png")} alt="print" />print</Dropdown.Item>
+        <Dropdown.Item
+        ><img src={require("../assets/layout/images/Excel-2013-icon.png")} tooltip="EXCEL" tooltipOptions={{ position: 'top' }} alt="EXCEL" />CSV</Dropdown.Item>
+        <Dropdown.Item> 
+          <img tooltip="EMAIL" tooltipOptions={{ position: 'top' }} href="https://www.flaticon.com/authors/pixel-perfect" src={require("../assets/layout/images/email.png")} alt="EMAIL" />Mail</Dropdown.Item>
+        <Dropdown.Item>
+          <img src={require("../assets/layout/images/pdf.png")} alt="PDF" />
+            PDF</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
+      <Button
+      size="sm"
+      name="create"
+      style={{backgroundColor: '#74C687', color:'#ffffff', border: 0,  width:'4rem', fontSize: '0.8em', height:'1.8rem', borderRadius:'4px',marginRight:'0.5rem', marginLeft:'2.7rem',  padding:'2px 2px 2px 2px'}}
+      >
+        Next
+      </Button>
+
+      <Button
+        size="sm"
+        className="ml-5"
+        name="view"
+        style={{backgroundColor:'#E63A3A', width:'4.5rem', border: 0,  fontSize: '0.8em', height:'1.8rem',  borderRadius:'8px', padding:'2px 2px 2px 2px'}} 
+      >
+        Back
+    </Button>
+      
+    </ButtonGroup>
+      
+
+    
+
+    </Col>
           </Row>
                     
                     
@@ -355,110 +428,37 @@ const IC4Pro_LastBSM = () => {
           
           <div className="card" style={{border: "none", }}> 
               <Row className="mb-3" xl  >
-                <Col sm={6} lg={6} xl={5}>
-    
-                <ButtonGroup size="sm">
                 
-                  
-                <Button
-                  size="sm"
-                  className="ml-2"
-                  name="edit"
-                  style={{ backgroundColor:'#237163', width:'4rem', border: 0,  fontSize: '0.8em', height:'1.8rem', marginRight:'0.5rem', padding:'2px 2px 2px 2px'}}
-                  >
-                    Accept
-                </Button>
-    
-                <Button
-                    size="sm"
-                    className="ml-1"
-                    name="view"
-                    style={{backgroundColor:'#E0918E', width:'4.5rem', border: 0,  fontSize: '0.8em', height:'1.8rem', marginRight:'0.5rem',padding:'2px 2px 2px 2px'}} 
-                  >
-                    Exception
-                </Button>
-    
-                <Button
-                    size="sm"
-                    className="ml-1"
-                    name="delete"
-                    style={{backgroundColor:'#ffffff', color:"black", width:'3.6rem', fontSize: '0.8em', height:'1.8rem', marginRight:'0.5rem', borderRadius:'4px', padding:'2px 2px 2px 2px'}}
-                    
-                  >
-                  Findings
-                </Button>
 
-                
-    
-                  <Dropdown as={ButtonGroup} 
-                  className="ml-1"
-                  style={{padding:"0", marginLeft:"0.1rem", border: 0, width:"18px"}} 
-                  >
-                    <Dropdown.Toggle 
-                    variant="primary btn-md"
-                    id="dropdown-basic"
-                    style={{backgroundColor: 'purple', width:'3.6rem', fontSize: '0.7em', height:'1.8rem', borderRadius:'4px', border: 0,}}>
-                      More</Dropdown.Toggle>
-                    <Dropdown.Menu>
-                    <Dropdown.Item>
-                      <img src={require("../assets/layout/images/Printer.png")} alt="PRINT" />Print</Dropdown.Item>
-                    <Dropdown.Item
-                    ><img src={require("../assets/layout/images/Excel-2013-icon.png")} tooltip="EXCEL" tooltipOptions={{ position: 'top' }} alt="EXCEL" />CSV</Dropdown.Item>
-                    <Dropdown.Item> 
-                      <img tooltip="EMAIL" tooltipOptions={{ position: 'top' }} href="https://www.flaticon.com/authors/pixel-perfect" src={require("../assets/layout/images/email.png")} alt="EMAIL" />Mail</Dropdown.Item>
-                    <Dropdown.Item>
-                      <img src={require("../assets/layout/images/pdf.png")} alt="PDF" />
-                        PDF</Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-
-                  <Button
-                  size="sm"
-                  name="create"
-                  style={{backgroundColor: '#74C687', color:'#ffffff', border: 0,  width:'4rem', fontSize: '0.8em', height:'1.8rem', borderRadius:'4px',marginRight:'0.5rem', marginLeft:'2.7rem',  padding:'2px 2px 2px 2px'}}
-                  >
-                    Next
-                  </Button>
-
-                  <Button
-                    size="sm"
-                    className="ml-5"
-                    name="view"
-                    style={{backgroundColor:'#E63A3A', width:'4.5rem', border: 0,  fontSize: '0.8em', height:'1.8rem',  borderRadius:'8px', padding:'2px 2px 2px 2px'}} 
-                  >
-                    Back
-                </Button>
-                  
-                </ButtonGroup>
-                  
-    
-                
-    
+                <Col sm={6} lg={2} xl={2} className="ml-3" style={{marginBottom:"0"}}>
+                <h6 style={{marginTop:'4px'}}>Branch Code: {state.data[0].IC4PROBRANCHCODE}</h6>
                 </Col>
-                
 
-                <Col sm={6} lg={6} xl={2} className="ml-3">
-                  {
+                <Col sm={6} lg={4} xl={4} className="ml-1" style={{marginBottom:"0"}}>
+                <h6 style={{marginTop:'4px'}}>Branch Name: {state.data[0].IC4PROBRANCHNAME}</h6>
+                </Col>
+                <Col sm={6} lg={2} xl={2} className="ml-3" style={{marginBottom:"0"}}>
+                {
                     state.data[0].IC4PRORISKVALUE ?
-                    <h6>Risk Level: {state.data[0].IC4PRORISKVALUE}</h6>
+                    <h6 style={{textAlign:"right", marginTop:'4px'}}>Risk Level: {state.data[0].IC4PRORISKVALUE}</h6>
                     :
                     (
 
                     <>
-                      <h6 >Risk Level: <a style={{color:'red'}}>Low </a> </h6>
+                      <h6 style={{textAlign:"right", marginTop:'4px'}}>Risk Level:  <a style={{color:'red'}}>Low </a> </h6>
                     </>
                     )
                   }
                 
                
                 </Col>
-                <Col sm={6} lg={6} xl={3} className="ml-3">
-                  <h6> Entry Date: {state.data[0].IC4PROENTRYDATE} </h6>
+                <Col sm={6} lg={2} xl={2} className="ml-3" style={{marginBottom:"0"}}>
+                  <h6 style={{textAlign:"right", marginTop:'4px'}}> Entry Date: {state.data[0].IC4PROENTRYDATE} </h6>
                 
                 </Col>
 
 
-                <Col >
+                <Col xl={2}>
                 <Button
                   size="sm"
                   className="ml-1"
@@ -488,7 +488,7 @@ const IC4Pro_LastBSM = () => {
               </Row>
               <Col class="center-block" >
                 <center>
-                <iframe src="../assets/layout/images/cheque-sample.jpg" height="300px" width="600px"></iframe>
+                {/* <iframe src="../assets/layout/images/cheque-sample.jpg" height="300px" width="600px"></iframe> */}
                 </center>
               </Col>
               
@@ -592,6 +592,8 @@ const IC4Pro_LastBSM = () => {
                 <RecordsDeleteModal/>
             </Modal.Body>
           </Modal> 
+
+        
         </>
   )
 }

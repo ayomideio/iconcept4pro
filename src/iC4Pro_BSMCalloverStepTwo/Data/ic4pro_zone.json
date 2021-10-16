@@ -1,0 +1,179 @@
+[
+	{
+	  "key":"Zone-one",
+	  "branch_name":"Fidelity1003",
+	  "branch_mnemonic":"Head office of Adroit Solutions",
+	  "branch_address":"3 Kofo Abayomi Street",
+	  "branch_street":"3 Kofo Abayomi Street",
+	  "branch_county":"Eti Osa",
+	  "ic4prolanguage":"en",
+	  "officer_ID":"ponle@adroit.com",
+	  "relationship":"REGION1",
+	  "keyOfficers":[
+		  {
+		   "designate":"MD",                   
+		   "officerId":[{
+			"officename":"femi.ademola@test.com"
+		},
+		{
+		 "officename":"kehinde@test.com" 
+		}
+		]    
+		  },
+		  {
+		   "designate":"Gm",                   
+		   "officerId":[{
+			"officename":"joy@test.com"
+		},
+		{
+		 "officename":"eoliseh@test.com" 
+		}
+		]   
+		  }
+	 ],
+  
+	 "clusters": [ 
+		{                          
+			"cluster":"Cluster-Four"
+			},
+			{
+			 "cluster":"Cluster-Five"
+			}
+  ],
+	  "branch_state":"Lagos",
+	  "branch_zipcode":"101245",
+	  "branch_country":"Nigeria",
+	  "branch_email":"tunde.chuks@gmail.com",
+	  "branch_telephone":"0032674672",
+	  "branch_mobilePhone":"+2348053464785",
+	  "whatsapp_number":"09065463785",
+	  "ott_messaging":"twitter",
+	  "branch_grade":"Very Strong",
+	  "branch_performance":"High",
+	  "branch_cluster":"Lagos10A",
+	  "recordDate":"20200603",
+	  "recordTime":"103040",
+	  "operator":"adroit",
+	  "operation":"create",
+	  "workstation":"11.20.10.1",
+	  "recordCounter":"1"
+	},
+	{
+	  "key":"Zone-two",
+	  "branch_name":"Fidelity1036",
+	  "branch_mnemonic":"Head office of Adroit Solutions",
+	  "branch_address":"82 Ahmed Tani Street",
+	  "branch_street":"82 Ahmed Tani Street",
+	  "branch_county":"Abeokuta North",
+	  "ic4prolanguage":"en",
+	  "officer_ID":"ibk@adroit.com",
+	  "relationship":"REGION1",
+	  "keyOfficers":[
+		  {
+		   "designate":"MD",                   
+		   "officerId":[{
+			   "officename":"ibkakin@test.com"
+		   },
+		   {
+			"officename":"tayo@test.com" 
+		   }
+		   ]    
+		  },
+		  {
+		   "designate":"GMOPS",                   
+		   "officerId":[{
+			"officename":"princess@test.com"
+		},
+		{
+		 "officename":"chinedu@test.com" 
+		}
+		]    
+		  }
+	 ],
+	 "clusters": [ 
+		{                          
+			"cluster":"Cluster-One"
+			},
+			{
+			 "cluster":"Cluster-Three"
+			}
+  ],
+	  "branch_state":"Ogun",
+	  "branch_zipcode":"101245",
+	  "branch_country":"Nigeria",
+	  "region":"region2",
+	  "branch_email":"femi.gbengi@gmail.com",
+	  "branch_telephone":"0032674672",
+	  "branch_mobilePhone":"08053464785",
+	  "whatsapp_number":"09065463785",
+	  "ott_messaging":"twitter",
+	  "branch_grade":"Good",
+	  "branch_performance":"Low",
+	  "branch_cluster":"Ogun10A",
+	  "recordDate":"20200603",
+	  "recordTime":"103040",
+	  "operator":"adroit",
+	  "operation":"create",
+	  "workstation":"11.20.10.1",
+	  "recordCounter":"1"
+	},
+	{
+	  "key":"Zone-three",
+	  "branch_name":"Fidelity1123",
+	  "branch_mnemonic":"Head office of Adroit Solutions",
+	  "branch_address":"82 gariki Street",
+	  "branch_street":"82 gariki Street",
+	  "branch_county":"Gwagwalada",
+	  "ic4prolanguage":"en",
+	  "officer_ID":"keni@adroit.com",
+	  "relationship":"REGION1",
+	  "keyOfficers":[
+		  {
+		   "designate":"GMOPS",                   
+		   "officerId":[{
+			"officename":"young@test.com"
+		},
+		{
+		 "officename":"yemi.yak@test.com" 
+		}
+		]    
+		  },
+		  {
+		   "designate":"MD",                   
+		   "officerId":[{
+			"officename":"ayoadeleke@test.com"
+		},
+		{
+		 "officename":"trust@test.com" 
+		}
+		]    
+		  }
+	 ],
+	 "clusters": [ 
+	  {                          
+	  "cluster":"Cluster-Two"
+	  },
+	  {
+	   "cluster":"Cluster-Seven"
+	  }
+  ],
+	  "branch_state":"Abuja",
+	  "branch_zipcode":"101245",
+	  "branch_country":"Nigeria",
+	  "region":"region3",
+	  "branch_email":"femi@gmail.com",
+	  "branch_telephone":"0032674672",
+	  "branch_mobilePhone":"08053464785",
+	  "whatsapp_number":"09065463785",
+	  "ott_messaging":"twitter",
+	  "branch_grade":"Good",
+	  "branch_performance":"Moderate",
+	  "branch_cluster":"Abuja10A",
+	  "recordDate":"20200603",
+	  "recordTime":"103040",
+	  "operator":"adroit",
+	  "operation":"create",
+	  "workstation":"11.20.10.1",
+	  "recordCounter":"1"
+	}
+  ]

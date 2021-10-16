@@ -1,0 +1,62 @@
+[
+    {
+      "ic4pro_branchCode": "110",
+	  "ic4pro_EntryUsedId": "AGOGBONNA",
+      "ic4pro_entryDate":  "20210110",
+      "ic4pro_noOfEntries":  "120",
+      "ic4pro_creditFreq": "60",
+      "ic4pro_totalCredit": 4424410,
+      "ic4pro_debitFreq": "45",
+      "ic4pro_totalDebit": 4424410
+     },
+ {
+      "ic4pro_branchCode": "110",
+	  "ic4pro_EntryUsedId": "CEZIAKONWA",
+      "ic4pro_entryDate": "20210110",
+      "ic4pro_noOfEntries": "60",
+      "ic4pro_creditFreq": "30",
+      "ic4pro_totalCredit": 9168100,
+      "ic4pro_debitFreq": "30",
+      "ic4pro_totalDebit": 9168100
+     },
+	 {
+      "ic4pro_branchCode": "110",
+	  "ic4pro_EntryUsedId": "CUKPAI",
+      "ic4pro_entryDate": "20210110",
+      "ic4pro_noOfEntries": "60",
+      "ic4pro_creditFreq": "30",
+      "ic4pro_totalCredit": 4984090,
+      "ic4pro_debitFreq": "30",
+      "ic4pro_totalDebit": 4984090
+     },
+	 {
+      "ic4pro_branchCode": "110",
+	  "ic4pro_EntryUsedId": "JKNTA",
+      "ic4pro_entryDate": "20210110",
+      "ic4pro_noOfEntries": "60",
+      "ic4pro_creditFreq": "30",
+      "ic4pro_totalCredit": 10000000,
+      "ic4pro_debitFreq": "30",
+      "ic4pro_totalDebit": 10000000
+     },
+	 {
+      "ic4pro_branchCode": "110",
+	  "ic4pro_EntryUsedId": "KCELEZUO",
+      "ic4pro_entryDate": "20210110",
+      "ic4pro_noOfEntries": "60",
+      "ic4pro_creditFreq": "30",
+      "ic4pro_totalCredit": 6204232,
+      "ic4pro_debitFreq": "30",
+      "ic4pro_totalDebit": 6204232
+     },
+	 {
+      "ic4pro_branchCode": "110",
+	  "ic4pro_EntryUsedId": "OUOKEREKE",
+      "ic4pro_entryDate": "20210110",
+      "ic4pro_noOfEntries": "60",
+      "ic4pro_creditFreq": "30",
+      "ic4pro_totalCredit": 10890003,
+      "ic4pro_debitFreq": "30",
+      "ic4pro_totalDebit": 10890003
+     }
+]

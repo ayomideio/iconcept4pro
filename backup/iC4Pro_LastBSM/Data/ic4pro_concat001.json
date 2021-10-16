@@ -1,0 +1,42 @@
+[
+    {
+    "ic4proConcatId": "45001-en",       
+    "ic4proDetails": "Lokoja",       
+    "ic4proModelid": "45001",       
+    "ic4proRelatedcoverage": "",  
+    "ic4proLinkcoverage": "",   
+    "ic4proCoverage": "",
+    "ic4proDesignate": "",      
+    "ic4proModelType": "",      
+    "ic4proAppsId": "",         
+    "ic4proAppsName": "",
+    "ic4proLanguage": "en",
+    "ic4proUserLocation":"Branch001",
+    "ic4proRecordDate":"20200603",
+    "ic4proRecordTime":"103040",
+    "ic4proOperator":"adroit",
+    "ic4proOperation": "Create",
+    "ic4proWorkstation":"xxxxxx0-183668",
+    "ic4proRecordCounter":"1"			
+     },
+     {
+    "ic4proConcatId": "45002-en",       
+    "ic4proDetails": "Kwara",       
+    "ic4proModelid": "45002",       
+    "ic4proRelatedcoverage": "", 
+    "ic4proLinkcoverage": "",   
+    "ic4proCoverage": "",
+    "ic4proDesignate": "",      
+    "ic4proModelType": "",      
+    "ic4proAppsId": "",         
+    "ic4proAppsName": "",       
+    "ic4proLanguage": "en",
+    "ic4proUserLocation":"Branch001",
+    "ic4proRecordDate":"20200603",
+    "ic4proRecordTime":"103040",
+    "ic4proOperator":"adroit",
+    "ic4proOperation": "Create",
+    "ic4proWorkstation":"xxxxxx0-183668",
+    "ic4proRecordCounter":"1"			
+    }
+]

@@ -3,12 +3,20 @@ var iC4Pro_Session_Storage = (function() {
   
 
     var transactionId = "";
+    var filteredData = "";
     var getName = function() {
       return full_name;    // Or pull this from cookie/localStorage
     };
     var getTransactionId =function (){
       return transactionId;
     }
+    var getFilteredData =function (){
+      return filteredData;
+    }
+    var setFilteredData = function(fullFilteredData) {
+      filteredData = fullFilteredData;     
+      // Also set this in cookie/localStorage
+    };
     var setTransactionId = function(name) {
       transactionId = name;     
       // Also set this in cookie/localStorage
@@ -21,6 +29,8 @@ var iC4Pro_Session_Storage = (function() {
 
     
     return {
+      getFilteredData:getFilteredData,
+      setFilteredData:setFilteredData,
       getName: getName,
       getTransactionId:getTransactionId,
       setName: setName,

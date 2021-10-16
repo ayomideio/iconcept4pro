@@ -1,0 +1,42 @@
+[
+    {
+     "ic4proRiskId": "201-en", 
+     "ic4proModelId":  "201",
+     "ic4proRisk":"riskLow",
+     "ic4proRiskColour": "FF0000",
+     "ic4proLowerBand":"1",
+     "ic4proUpperBand":"4",
+     "ic4proBandDesc":"It is low and no action for now",
+     "ic4proImplication": "Memo",
+     "ic4proAction" :  "Memo",
+     "ic4proLanguage": "en",
+    "ic4proUserLocation":"Branch001",
+    "ic4proRecordDate":"20200603",
+    "ic4proRecordTime":"103040",
+    "ic4proOperator":"adroit",
+    "ic4proOperation": "Create",
+    "ic4proWorkstation":"xxxxxx0-183668",
+    "ic4proRecordCounter":"1"			
+     },
+     {
+        "ic4proRiskId": "502-en", 
+        "ic4proModelId":  "502",
+        "ic4proRisk":"riskLow",
+        "ic4proRiskColour": "FF0000",
+        "ic4proLowerBand":"1",
+        "ic4proUpperBand":"4",
+        "ic4proBandDesc":"It is low and no action for now",
+        "ic4proImplication": "Memo",
+        "ic4proAction" :  "Memo",
+        "ic4proLanguage": "en",
+       "ic4proUserLocation":"Branch001",
+       "ic4proRecordDate":"20200603",
+       "ic4proRecordTime":"103040",
+       "ic4proOperator":"adroit",
+       "ic4proOperation": "Create",
+       "ic4proWorkstation":"xxxxxx0-183668",
+       "ic4proRecordCounter":"1"			
+        }   
+]
+
+

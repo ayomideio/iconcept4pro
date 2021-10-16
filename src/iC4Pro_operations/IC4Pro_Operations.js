@@ -346,7 +346,7 @@ const IC4Pro_Operaions = () => {
               style={{ height: '2rem', backgroundColor: "gray", marginLeft: '0.5rem', border: 'none' }}
             >
         
-              PRINT
+              print
                   </Button>
           </Col>
         </Row>

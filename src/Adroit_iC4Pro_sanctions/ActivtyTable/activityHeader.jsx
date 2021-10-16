@@ -1,6 +1,6 @@
 import React, { Component,useRef } from 'react';
 
- const Header=({ id, data, columnData, setPrinting })=> {
+ const Header=({ id, data, columnData, setprinting })=> {
 
     const componentRef = useRef();
     

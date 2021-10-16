@@ -5,7 +5,7 @@ import {
   Button,
   Dropdown,
   ButtonGroup,
-  Card,
+  Card
 } from 'react-bootstrap';
 import FormActivty from '../FormActivty';
 import ActivityTable from '../ActivtyTable';
@@ -88,7 +88,7 @@ const ActivityModal = () => {
     }
   }, [state]);
 
-
+ 
   return (
     <>
 
@@ -186,7 +186,7 @@ const ActivityModal = () => {
                     <Dropdown.Menu>
                     <Dropdown.Item
                     >
-                      <img src={require("../../assets/layout/images/Printer.png")} alt="PRINT" />Print</Dropdown.Item>
+                      <img src={require("../../assets/layout/images/printer.png")} alt="PRINT" />Print</Dropdown.Item>
                     <Dropdown.Item
                     ><img src={require("../../assets/layout/images/Excel-2013-icon.png")} tooltip="EXCEL" tooltipOptions={{ position: 'top' }} alt="EXCEL" />CSV</Dropdown.Item>
                     <Dropdown.Item

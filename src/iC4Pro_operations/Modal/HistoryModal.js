@@ -194,7 +194,7 @@ const HistoryModal = () => {
                     <Dropdown.Menu>
                     <Dropdown.Item
                     >
-                      <img src={require("../../assets/layout/images/Printer.png")} alt="PRINT" />Print</Dropdown.Item>
+                      <img src={require("../../assets/layout/images/printer.png")} alt="print" />print</Dropdown.Item>
                     <Dropdown.Item
                     ><img src={require("../../assets/layout/images/Excel-2013-icon.png")} tooltip="EXCEL" tooltipOptions={{ position: 'top' }} alt="EXCEL" />CSV</Dropdown.Item>
                     <Dropdown.Item
@@ -304,7 +304,7 @@ const HistoryModal = () => {
               }}
                 >
     
-                  PRINT
+                  print
               </Button>
                 </Col>
               </Row>

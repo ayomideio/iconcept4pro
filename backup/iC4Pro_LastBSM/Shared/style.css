@@ -1,0 +1,84 @@
+/* 
+.react-datepicker,
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  display: block;
+  background-color: #fff !important;
+  width: 100%;
+  height: 2rem !important;
+  margin: 0;
+} */
+.react-datepicker {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    background-color: rgb(143, 240, 175);
+    color: rgb(228, 226, 226);
+    border: 0px;
+    border-radius: 0;
+    display: inline-block;
+    position: relative;
+  }
+
+.react-datepicker__header {
+    text-align: center;
+    background-color: #3e82cf;
+    border-bottom: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 8px;
+    position: relative;
+  
+  }
+  
+  .react-datepicker__today-button {
+    background: #3e82cf;
+    border-top: 0px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    clear: left;
+  }
+
+.mytooltip > .tooltip-inner {
+  max-width: 80%;
+  white-space: normal;
+  font-size: 18px;
+}
+
+.popoverheader {
+  background: #007bff;
+}
+
+.PopOverWidth {
+  max-width: 80%;
+}
+
+.PopContent {
+  font-size: 18px;
+  background: #ff6600;
+}
+
+.modalWidth{
+  width: 1400px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.modal-100w { max-width: 93% !important; }
+
+.modal-91w { max-width: 91% !important; }
+
+.textareaElement {
+  width: 300px;
+  min-height: 17px;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

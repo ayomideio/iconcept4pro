@@ -49,7 +49,7 @@ import ic4procurrency from './Adroit_iC4Pro_currency2/iC4Pro_Currency';
 import ic4proregulators from './Adroit_iC4Pro_regulators/iC4Pro_Regulator';
 import ic4prosanctions from './Adroit_iC4Pro_sanctions/iC4Pro_Sanction';
 import ic4procallover from './Adroit_iC4Pro_callover/IC4Pro_Callover';
-import IC4Pro_BSMCallover from './iC4Pro_BSMCallover/IC4Pro_BSMCallover';
+import IC4Pro_BSMCallover from './iC4Pro_BSMCalloverStepTwo/IC4Pro_BSMCallover';
 import IC4Pro_NextBSM from  './iC4Pro_NextBSM/IC4Pro_NextBSM'
 import IC4Pro_LastBSM from  './iC4Pro_LastBSM/IC4Pro_LastBSM'
 

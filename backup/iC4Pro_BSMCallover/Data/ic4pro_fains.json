@@ -1,0 +1,57 @@
+[
+  {
+    "ic4proFinId": "FAIN-20210707-185856",
+    "ic4proReference": "ref/10/100",
+    "ic4proLocation": "45001-en",
+    "ic4proInspectionType": "42001-en", 
+    "ic4proAuditDateFrom": "07/07/2021",             
+    "ic4proAuditDateTo": "14/07/2021",
+    "ic4proVisitDateFrom": "07/07/2021",
+    "ic4proVisitDateTo": "14/07/2021",
+    "ic4proExitMeetingDate": "15/07/2021",
+    "ic4proDepartment": "44001-en",
+    "ic4proNotification": "Free Text",
+    "ic4proMessage": "Memo",
+    "ic4proContactDesignate": "Mr Femi Ademola",
+    "ic4proContactOfficer": "femi.ademola@test.com",
+    "ic4proOtherReceivers":[
+            {
+           "ic4proOfficerDesignate": "ICO",
+           "ic4proOfficerName": "Mr Femi Ademola"
+        }
+    ],
+    "ic4proExternalReceivers":[
+        {
+          "ic4proExtReceiver": "ICO",
+          "ic4proExtDesignate": "Mr Femi Ademola"
+        }
+   ],
+    
+    "ic4proTeamLeader": "princess@test.com",
+    "ic4proLeaderlevel":"ic4MAN",
+    "ic4proTeamMembers":[
+             {
+           "ic4proTeamMember": "chinedu@test.com",
+           "ic4proMemberLevel": "BOM"
+             }
+            ],
+    "ic4proAttachments": "", 
+    "ic4proOriginator": "femi.ademola@test.com",
+    "ic4proOriginatorRole":  "ICO",
+    "ic4proNotificationStatus" : "Test",
+    "ic4proMisId": "42004",
+    "ic4proMisStatus": "Incorrect",
+    "ic4proRecallReason": "Error in posting",
+    "ic4proRecallMsg": "Memo",
+    "ic4proRecaller": "Usman",
+    "ic4proRecallerRole": "Admin",
+       "ic4proLanguage": "en",
+       "ic4proUserLocation": "Branch001",
+       "ic4proRecordDate": "20200603",
+       "ic4proRecordTime": "103040",
+       "ic4proOperator": "adroit",
+       "ic4proOperation": "Create",
+       "ic4proWorkstation":"xxxxxx0-183668",
+       "ic4proRecordCounter": "1"		
+     }	  
+   ]

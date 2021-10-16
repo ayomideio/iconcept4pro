@@ -1,0 +1,23 @@
+[
+    {
+     "ic4proOperationID":"1:201-en",
+	   "ic4proModalId": "201",
+     "ic4proFunction":"Create",
+     "ic4proDescription":"Created",
+     "ic4proFunctionColor": "RED",
+     "ic4proSendOTP": "xxxxxx",
+     "ic4proOtpMessage":  "Memo",
+     "ic4proLanguage": "en",
+     "ic4proRecordDate":"20200603",
+     "ic4proRecordTime":"10:30:40",
+     "ic4proOperator":"adroit",
+     "ic4proOperation":"Created",
+     "ic4proWorkstation":"11.20.10.1",
+     "ic4proRecordCounter":"1",
+     "ic4proModifier": "femi",            
+     "ic4proDateModified": "20210623",        
+     "ic4proTimeModified": "180701",        
+     "ic4proModifierTerminal": "hj1341345-18666"
+    }				
+
+]

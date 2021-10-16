@@ -378,7 +378,7 @@ function Table({ columns, data }) {
                             backgroundColor: ' #48c9b0  ', height: '2rem',
                             borderRadius: '4px', border: 0, marginLeft: '15.4rem',
                         }}>
-                        Print</Dropdown.Toggle>
+                        print</Dropdown.Toggle>
                     <Dropdown.Menu
                         style={{
                             backgroundColor: ' #a3e4d7 '
@@ -393,7 +393,7 @@ function Table({ columns, data }) {
                                window.print()
                             }}
                         >
-                            1.  Print
+                            1.  print
                       </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
